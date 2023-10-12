@@ -19,6 +19,7 @@ public:
 private:
     QSharedPointer<QFile> logFile;
     bool displayToConsole{}, saveToFile{};
+    QString getCurrDate();
 
 signals:
 

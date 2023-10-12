@@ -14,10 +14,8 @@ QObject{parent}, displayToConsole(displayToConsole), saveToFile(saveToFile){
     if (logFile->open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)){
 
         QTextStream out(logFile.data());
-        QString currentDateStr { QDateTime::currentDateTime().toString(Qt::ISODate) };
 
-        currentDateStr.replace('T', ' ');
-        out << "[Execution " + currentDateStr + "]" + QString(2, '\n');
+        out << "[Execution " + getCurrDate() + "]" + QString(2, '\n');
 
         qInstallMessageHandler(&Debug_Interceptor::myMessageOutputHandler);
     }
@@ -31,6 +29,12 @@ Debug_Interceptor::~Debug_Interceptor(){
     if(logFile && logFile->isOpen()) logFile->close();
 }
 
+QString Debug_Interceptor::getCurrDate(){
+    QString currentDateStr { QDateTime::currentDateTime().toString(Qt::ISODate) };
+    currentDateStr.replace('T', ' ');
+    return currentDateStr;
+}
+
 
 void Debug_Interceptor::myMessageOutputHandler(QtMsgType type, const QMessageLogContext &context, const QString &msg) {
     QSharedPointer<Debug_Interceptor>instance{ getInstance() };
@@ -41,9 +45,7 @@ void Debug_Interceptor::myMessageOutput(QtMsgType type, const QMessageLogContext
 {
     QByteArray localMsg{ msg.toLocal8Bit() };
 
-    QString currentDateStr{ QDateTime::currentDateTime().toString(Qt::ISODate) }, msgType{};
-
-    currentDateStr.replace('T', ' ');
+    QString msgType{};
 
     const char* file{ context.file ? context.file : "" };
     const char* function{ context.function ? context.function : "" };
@@ -73,7 +75,7 @@ void Debug_Interceptor::myMessageOutput(QtMsgType type, const QMessageLogContext
     contextFile = contextFile.right(contextFile.length() - contextFile.lastIndexOf('/') - 1);
 
     if(saveToFile){
-        out << "[" + msgType + " " + currentDateStr + "]: " << localMsg.constData() << "\n" << contextFile << ":" << context.line << ", " << context.function << QString(2, '\n');
+        out << "[" + msgType + " " + getCurrDate() + "]: " << localMsg.constData() << "\n" << contextFile << ":" << context.line << ", " << context.function << QString(2, '\n');
     }
 
     if(displayToConsole){
