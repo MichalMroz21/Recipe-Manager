@@ -22,10 +22,25 @@ Window {
 
         ToolButton {
             text: "☰"
+            font.pixelSize: getDrawerEntrySize(root.width, root.height);
             onClicked: drawer.open();
         }
     }
 
+    RotationAnimator {
+        id: rotationAnimator
+        from: 0;
+        to: 360;
+        duration: 1000
+        loops: Animation.Infinite
+    }
+
+    ScaleAnimator {
+        id: scaleAnimator
+        from: 1
+        to: 1.15
+        duration: 450
+    }
 
     Drawer {
         id: drawer
@@ -69,6 +84,7 @@ Window {
                     }
 
                     Image {
+                        id: menuImage
                         source: getImagePath(model.index)
                         fillMode: Image.PreserveAspectFit
 
@@ -78,6 +94,7 @@ Window {
                         anchors.bottomMargin: parent.height * 0.1
 
                         anchors.fill: parent
+                        smooth: true
                     }
 
                     Text {
@@ -92,10 +109,18 @@ Window {
                         anchors.fill: parent
                         hoverEnabled: true
 
-                        onEntered: rect_butt.layer.enabled = true;
-                        onExited: rect_butt.layer.enabled = false;
+                        onEntered: {
+                            rect_butt.layer.enabled = true;
+                            handleAnimation(model.index, menuImage, true)
+                        }
+
+                        onExited: {
+                            rect_butt.layer.enabled = false;
+                            handleAnimation(model.index, menuImage, false)
+                        }
 
                         onClicked: {
+                            handleAnimation(model.index, menuImage, false)
                             switchPage(model.index);
                             drawer.close();
                         }
@@ -108,7 +133,7 @@ Window {
 
     StackView{
        id: stackView
-       initialItem: "HomeForm.qml"
+       initialItem: "User.qml"
        anchors.fill: parent
     }
 
@@ -116,14 +141,32 @@ Window {
         return text === "Options";
     }
 
+    function handleAnimation(index, image, turnOn){
+        switch(index){
+            case 0:
+            case 1:
+            case 2:
+            case 3: {
+                scaleAnimator.target = image;
+                scaleAnimator.running = turnOn;
+                if(turnOn === false) image.scale = 1;
+                break;
+            }
+            case 4: {
+                rotationAnimator.target = image;
+                rotationAnimator.running = turnOn;
+                break;
+            }
+        }
+    }
+
     function getImagePath(index){
         switch (index) {
-            case 0: return ROOT_PATH;
-            case 1: return ROOT_PATH;
-            case 2: return ROOT_PATH;
-            case 3: return ROOT_PATH;
+            case 0: return "../assets/user.png";
+            case 1: return "../assets/recipe.png";
+            case 2: return "../assets/search.png";
+            case 3: return "../assets/plan.png";
             case 4: return "../assets/options.png";
-            default: return ROOT_PATH;
         }
     }
 
@@ -152,13 +195,17 @@ Window {
     function switchPage(index) {
         var pageSelected;
         switch (index) {
-            case 0: pageSelected = "HomeForm.qml"; break;
+            case 0: pageSelected = "User.qml"; break;
             case 1: pageSelected = "Page1.qml"; break;
             case 2: pageSelected = "Page2.qml"; break;
             case 3: pageSelected = "Page3.qml"; break;
             case 4: pageSelected = "Options.qml"; break;
         }
         stackView.push(pageSelected);
+    }
+
+    function getDrawerEntrySize(width, height){
+        return (width + height) * 0.03;
     }
 
     function getFontSize(width, height){

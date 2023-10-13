@@ -19,13 +19,18 @@ qt_add_qml_module(appRecipeManager
 
         QML_FILES
             src_gui/Main.qml
-            src_gui/HomeForm.qml
+            src_gui/User.qml
             src_gui/Page1.qml
             src_gui/Page2.qml
             src_gui/Page3.qml
+            src_gui/Options.qml
 
         RESOURCES
             assets/options.png
+            assets/user.png
+            assets/recipe.png
+            assets/search.png
+            assets/plan.png
 )
 
 #CMakeConfig.hpp - constants from cmake for the entire project to use
