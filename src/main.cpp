@@ -1,8 +1,11 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
 
 #include "managerdb.hpp"
 #include "debug_interceptor.hpp"
+
+#include "CMakeConfig.hpp"
 
 int main(int argc, char *argv[]){
 
@@ -11,6 +14,10 @@ int main(int argc, char *argv[]){
     QSharedPointer<Debug_Interceptor> debugInterceptor{ Debug_Interceptor::getInstance() };
 
     QQmlApplicationEngine engine;
+
+    //add objects to Main.qml
+    engine.rootContext()->setContextProperty("ROOT_PATH", ROOT_PATH);
+
     const QUrl url(u"qrc:/RecipeManager/src_gui/Main.qml"_qs);
 
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed,

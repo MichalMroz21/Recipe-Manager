@@ -79,7 +79,7 @@ void Debug_Interceptor::myMessageOutput(QtMsgType type, const QMessageLogContext
     }
 
     if(displayToConsole){
-        fprintf(stderr, "\n[%s]: %s (%s:%u, %s)\n", msgType.toUtf8().constData(), localMsg.constData(), file, context.line, function);
+        fprintf(stderr, "[%s]: %s \n%s:%u, %s\n\n", msgType.toUtf8().constData(), localMsg.constData(), file, context.line, function);
     }
 }
 

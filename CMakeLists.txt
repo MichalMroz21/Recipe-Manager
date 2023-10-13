@@ -16,8 +16,20 @@ add_subdirectory(include)
 qt_add_qml_module(appRecipeManager
         URI RecipeManager
         VERSION 1.0
-        QML_FILES src_gui/Main.qml
+
+        QML_FILES
+            src_gui/Main.qml
+            src_gui/HomeForm.qml
+            src_gui/Page1.qml
+            src_gui/Page2.qml
+            src_gui/Page3.qml
+
+        RESOURCES
+            assets/options.png
 )
+
+#CMakeConfig.hpp - constants from cmake for the entire project to use
+add_definitions(-DROOT_PATH_CMAKE=${CMAKE_CURRENT_SOURCE_DIR})
 
 target_include_directories(appRecipeManager PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
