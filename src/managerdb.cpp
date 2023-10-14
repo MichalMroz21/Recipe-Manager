@@ -20,7 +20,7 @@ void ManagerDB::connectDB() const{
         return;
     }
 
-    qInfo() << "Connected successfully!";
+    qInfo() << "Connected successfully";
     db.close();
 }
 
