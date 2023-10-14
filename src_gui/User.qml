@@ -3,77 +3,80 @@ import QtQuick.Controls 6.3
 import QtCharts 6.3
 import QtQuick.Layouts 6.3
 
+import "LoginRegisterComponents"
 
 Page {
-    antialiasing: true
-    title: qsTr("User")
+    property bool layoutSwitch: true
 
-    ColumnLayout{
-        antialiasing: true
+    Loader{
+        id: layoutLoader
+        sourceComponent: layoutSwitch === true ? loginForm : registerForm
         anchors.centerIn: parent
-        spacing: 0.065 * root.height
+    }
 
-        Label {
-            Layout.alignment: Qt.AlignCenter
-            id: label
-            text: qsTr("Log in")
-            font.bold: true
-            font.pointSize: 13
-            scale: Math.min(root.width * 0.003, root.height * 0.003)
-            color: "#00bfff";
-        }
+    Component{
+        id: registerForm
 
-        TextField {
-            Layout.alignment: Qt.AlignCenter
-            background: Item {
-                implicitWidth: 0.4 * root.width
-                implicitHeight: 0.09 * root.height
+        ColumnLayout{
+            spacing: 0.065 * root.height
 
-                Rectangle {
-                    color: "gray"
-                    height: 1
-                    width: parent.width
-                    anchors.bottom: parent.bottom
-                }
+            TextRow {
+                text: qsTr("Register")
             }
 
-            id: login
-            font.pointSize: 0.01 * (root.width + root.height)
-            placeholderText: {
-                qsTr("Login")
+            InputRow {
+                id: registerLogin
+                placeholderText: qsTr("Login")
             }
 
-        }
-
-        TextField {
-            Layout.alignment: Qt.AlignCenter
-            background: Item {
-                implicitWidth: 0.4 * root.width
-                implicitHeight: 0.09 * root.height
-
-                Rectangle {
-                    color: "gray"
-                    height: 1
-                    width: parent.width
-                    anchors.bottom: parent.bottom
-                }
+            InputRow {
+                id: registerPassword
+                placeholderText: qsTr("Password")
+                echoMode: TextInput.Password
             }
-            echoMode: TextInput.Password
-            id: password
-            font.pointSize: 0.01 * (root.width + root.height)
-            placeholderText: qsTr("Password")
-        }
 
-        Button {
-            scale: Math.min(root.width * 0.002, root.height * 0.002)
-            Layout.alignment: Qt.AlignCenter
-            id: button
+            SubmitButton {
+                id: registerButton
+                text: qsTr("Register")
+            }
 
-            text: qsTr("Log In")
+            SwitchForm{
+                text: "Go back to login";
+            }
         }
     }
 
+    Component{
+        id: loginForm
 
+        ColumnLayout{
+            spacing: 0.065 * root.height
+
+            TextRow {
+                text: qsTr("Log in")
+            }
+
+            InputRow {
+                id: login
+                placeholderText: qsTr("Login")
+            }
+
+            InputRow {
+                id: password
+                placeholderText: qsTr("Password")
+                echoMode: TextInput.Password
+            }
+
+            SubmitButton {
+                id: loginButton
+                text: qsTr("Log In")
+            }
+
+            SwitchForm{
+                text: "New? Register!";
+            }
+        }
+    }
 }
 
 

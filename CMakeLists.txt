@@ -24,6 +24,11 @@ qt_add_qml_module(appRecipeManager
             src_gui/Search.qml
             src_gui/Plan.qml
             src_gui/Options.qml
+            src_gui/LoginRegisterComponents/InputRow.qml
+            src_gui/LoginRegisterComponents/TextRow.qml
+            src_gui/LoginRegisterComponents/SubmitButton.qml
+            src_gui/LoginRegisterComponents/SwitchForm.qml
+
 
         RESOURCES
             assets/options.png
