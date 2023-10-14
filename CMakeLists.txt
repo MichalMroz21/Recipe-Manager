@@ -20,9 +20,9 @@ qt_add_qml_module(appRecipeManager
         QML_FILES
             src_gui/Main.qml
             src_gui/User.qml
-            src_gui/Page1.qml
-            src_gui/Page2.qml
-            src_gui/Page3.qml
+            src_gui/Recipes.qml
+            src_gui/Search.qml
+            src_gui/Plan.qml
             src_gui/Options.qml
 
         RESOURCES

@@ -196,16 +196,16 @@ Window {
         var pageSelected;
         switch (index) {
             case 0: pageSelected = "User.qml"; break;
-            case 1: pageSelected = "Page1.qml"; break;
-            case 2: pageSelected = "Page2.qml"; break;
-            case 3: pageSelected = "Page3.qml"; break;
+            case 1: pageSelected = "Recipes.qml"; break;
+            case 2: pageSelected = "Search.qml"; break;
+            case 3: pageSelected = "Plan.qml"; break;
             case 4: pageSelected = "Options.qml"; break;
         }
         stackView.push(pageSelected);
     }
 
     function getDrawerEntrySize(width, height){
-        return (width + height) * 0.03;
+        return (width + height) * 0.02;
     }
 
     function getFontSize(width, height){
