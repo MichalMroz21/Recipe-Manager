@@ -1,8 +1,8 @@
 #include "debug_interceptor.hpp"
-
+#include "CMakeConfig.hpp"
 
 QSharedPointer<Debug_Interceptor> Debug_Interceptor::getInstance(){
-    static QSharedPointer<Debug_Interceptor> instance{new Debug_Interceptor(true, true, QCoreApplication::applicationFilePath() + "Logs.txt")};
+    static QSharedPointer<Debug_Interceptor> instance{new Debug_Interceptor(true, true, QString(ROOT_PATH) + "/Logs.txt")};
     return instance;
 }
 
@@ -15,7 +15,9 @@ QObject{parent}, displayToConsole(displayToConsole), saveToFile(saveToFile){
 
         QTextStream out(logFile.data());
 
-        out << "[Execution " + getCurrDate() + "]" + QString(2, '\n');
+        QString execTitle = "[Execution " + getCurrDate() + "]";
+
+        out << QString(execTitle.size(), '-') << Qt::endl << execTitle << Qt::endl << QString(execTitle.size(), '-') << QString(2, '\n');
 
         qInstallMessageHandler(&Debug_Interceptor::myMessageOutputHandler);
     }
@@ -43,17 +45,19 @@ void Debug_Interceptor::myMessageOutputHandler(QtMsgType type, const QMessageLog
 
 void Debug_Interceptor::myMessageOutput(QtMsgType type, const QMessageLogContext &context, const QString &msg)
 {
-    QByteArray localMsg{ msg.toLocal8Bit() };
+    QString msgType{}, contextFile = context.file;
 
-    QString msgType{};
+    contextFile = contextFile.right(contextFile.length() - contextFile.lastIndexOf('/') - 1);
 
-    const char* file{ context.file ? context.file : "" };
+    QByteArray localMsg{ msg.toLocal8Bit() },
+               contextFileBA = contextFile.toLocal8Bit();
+
+    const char* contextFileConst = contextFileBA.data();
     const char* function{ context.function ? context.function : "" };
 
     QTextStream out(logFile.data());
 
     switch(type) {
-
         case QtDebugMsg:
             msgType = "Debug";
             break;
@@ -71,15 +75,12 @@ void Debug_Interceptor::myMessageOutput(QtMsgType type, const QMessageLogContext
             break;
     }
 
-    QString contextFile = context.file;
-    contextFile = contextFile.right(contextFile.length() - contextFile.lastIndexOf('/') - 1);
-
     if(saveToFile){
         out << "[" + msgType + " " + getCurrDate() + "]: " << localMsg.constData() << "\n" << contextFile << ":" << context.line << ", " << context.function << QString(2, '\n');
     }
 
     if(displayToConsole){
-        fprintf(stderr, "[%s]: %s \n%s:%u, %s\n\n", msgType.toUtf8().constData(), localMsg.constData(), file, context.line, function);
+        fprintf(stderr, "[%s]: %s \n%s:%u, %s\n\n", msgType.toUtf8().constData(), localMsg.constData(), contextFileConst, context.line, function);
     }
 }
 

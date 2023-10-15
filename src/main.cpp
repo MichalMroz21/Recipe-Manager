@@ -11,7 +11,8 @@ int main(int argc, char *argv[]){
 
     QGuiApplication app(argc, argv);
 
-    QSharedPointer<Debug_Interceptor> debugInterceptor{ Debug_Interceptor::getInstance() };
+    auto debugInterceptor{ Debug_Interceptor::getInstance() };
+    auto managerDB{ QSharedPointer<ManagerDB>(new ManagerDB()) };
 
     QQmlApplicationEngine engine;
 
@@ -25,8 +26,6 @@ int main(int argc, char *argv[]){
         Qt::QueuedConnection);
 
     engine.load(url);
-
-    QSharedPointer<ManagerDB> managerDB{ QSharedPointer<ManagerDB>(new ManagerDB()) };
 
     managerDB->loadDriver();
     managerDB->connectDB();

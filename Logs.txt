@@ -1,0 +1,58 @@
+[Execution 2023-10-16 01:19:16]
+
+[Info 2023-10-16 01:19:16]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-16 01:19:16]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-16 01:19:16]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-16 01:19:16]: Opening Database
+managerdb.cpp:7, void ManagerDB::connectDB() const
+
+[Critical 2023-10-16 01:19:22]: Failed to connect!
+managerdb.cpp:18, void ManagerDB::connectDB() const
+
+[Critical 2023-10-16 01:19:22]: "Access denied for user 'roditu'@'178.73.35.46' (using password: NO) QMYSQL: Unable to connect"
+managerdb.cpp:19, void ManagerDB::connectDB() const
+
+---------------
+[Execution 2023-10-16 01:22:58]
+---------------
+
+[Info 2023-10-16 01:22:58]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-16 01:22:58]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-16 01:22:58]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-16 01:22:58]: Opening Database
+managerdb.cpp:7, void ManagerDB::connectDB() const
+
+-------------------------------
+[Execution 2023-10-16 01:24:53]
+-------------------------------
+
+[Info 2023-10-16 01:24:53]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-16 01:24:53]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-16 01:24:53]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-16 01:24:53]: Opening Database
+managerdb.cpp:7, void ManagerDB::connectDB() const
+
+[Critical 2023-10-16 01:24:53]: Failed to connect!
+managerdb.cpp:18, void ManagerDB::connectDB() const
+
+[Critical 2023-10-16 01:24:53]: "Access denied for user 'roditu'@'178.73.35.46' (using password: NO) QMYSQL: Unable to connect"
+managerdb.cpp:19, void ManagerDB::connectDB() const
+
