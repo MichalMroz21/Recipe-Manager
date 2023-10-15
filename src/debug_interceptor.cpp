@@ -55,7 +55,7 @@ void Debug_Interceptor::myMessageOutput(QtMsgType type, const QMessageLogContext
     const char* contextFileConst = contextFileBA.data();
     const char* function{ context.function ? context.function : "" };
 
-    QTextStream out(logFile.data());
+    QTextStream toLogFile(logFile.data());
 
     switch(type) {
         case QtDebugMsg:
@@ -76,11 +76,11 @@ void Debug_Interceptor::myMessageOutput(QtMsgType type, const QMessageLogContext
     }
 
     if(saveToFile){
-        out << "[" + msgType + " " + getCurrDate() + "]: " << localMsg.constData() << "\n" << contextFile << ":" << context.line << ", " << context.function << QString(2, '\n');
+        toLogFile << "[" + msgType + " " + getCurrDate() + "]: " << localMsg.constData() << "\n" << contextFile << ":" << context.line << ", " << context.function << QString(2, '\n');
     }
 
     if(displayToConsole){
-        fprintf(stderr, "[%s]: %s \n%s:%u, %s\n\n", msgType.toUtf8().constData(), localMsg.constData(), contextFileConst, context.line, function);
+        fprintf(stdout, "[%s]: %s \n%s:%u, %s\n\n", msgType.toUtf8().constData(), localMsg.constData(), contextFileConst, context.line, function);
     }
 }
 

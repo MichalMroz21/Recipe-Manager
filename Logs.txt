@@ -56,3 +56,17 @@ managerdb.cpp:18, void ManagerDB::connectDB() const
 [Critical 2023-10-16 01:24:53]: "Access denied for user 'roditu'@'178.73.35.46' (using password: NO) QMYSQL: Unable to connect"
 managerdb.cpp:19, void ManagerDB::connectDB() const
 
+-------------------------------
+[Execution 2023-10-16 01:31:05]
+-------------------------------
+
+[Info 2023-10-16 01:31:07]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-16 01:32:11]
+-------------------------------
+
+[Info 2023-10-16 01:32:13]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+

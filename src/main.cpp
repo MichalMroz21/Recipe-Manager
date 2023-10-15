@@ -27,8 +27,7 @@ int main(int argc, char *argv[]){
 
     engine.load(url);
 
-    managerDB->loadDriver();
-    managerDB->connectDB();
+    //connect gui signals with some db slots before .exec()
 
     return app.exec();
 }
