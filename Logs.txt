@@ -532,3 +532,14 @@ Main.qml:-1,
 [Execution 2023-10-23 23:44:32]
 -------------------------------
 
+-------------------------------
+[Execution 2023-10-23 23:58:16]
+-------------------------------
+
+[Info 2023-10-23 23:58:35]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-23 23:59:26]
+-------------------------------
+

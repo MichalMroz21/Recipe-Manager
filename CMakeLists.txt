@@ -25,7 +25,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 6.4 REQUIRED COMPONENTS Quick Sql)
 
 qt_standard_project_setup()
-qt_policy(SET QTP0001 OLD)
+qt_policy(SET QTP0001 NEW)
 
 qt_add_executable(appRecipeManager)
 
@@ -37,6 +37,7 @@ add_subdirectory(assets)
 qt_add_qml_module(appRecipeManager
         URI RecipeManager
         VERSION 1.0
+        RESOURCE_PREFIX "/"
 
         QML_FILES ${QML_FILES}
         RESOURCES ${RESOURCES}
