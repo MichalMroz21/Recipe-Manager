@@ -1,9 +1,5 @@
-set(INCLUDE_FILES
-    managerdb.hpp
-    debug_interceptor.hpp
-    CMakeConfig.hpp
-)
+file(GLOB FOLDER_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.hpp)
 
 target_sources(appRecipeManager PRIVATE
-    ${INCLUDE_FILES}
+    ${FOLDER_FILES}
 )

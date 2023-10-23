@@ -1,11 +1,7 @@
-set(SOURCE_FILES
-    main.cpp
-    managerdb.cpp
-    debug_interceptor.cpp
-)
+file(GLOB FOLDER_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp)
 
 target_sources(appRecipeManager PRIVATE
-    ${SOURCE_FILES}
+    ${FOLDER_FILES}
 )
 
 

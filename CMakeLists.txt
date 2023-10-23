@@ -1,5 +1,23 @@
 cmake_minimum_required(VERSION 3.16)
 
+
+macro(add_files file file_collection)
+
+    file (RELATIVE_PATH _relPath "${PROJECT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}")
+
+    if (_relPath)
+        list (APPEND ${file_collection} "${_relPath}/${file}")
+    else()
+        list (APPEND ${file_collection} "${file}")
+    endif()
+
+    if (_relPath)
+        set (${file_collection} ${${file_collection}} PARENT_SCOPE)
+    endif()
+
+endmacro()
+
+
 project(RecipeManager VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -7,35 +25,21 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 6.4 REQUIRED COMPONENTS Quick Sql)
 
 qt_standard_project_setup()
+qt_policy(SET QTP0001 OLD)
 
 qt_add_executable(appRecipeManager)
 
 add_subdirectory(src)
 add_subdirectory(include)
+add_subdirectory(src_gui)
+add_subdirectory(assets)
 
 qt_add_qml_module(appRecipeManager
         URI RecipeManager
         VERSION 1.0
 
-        QML_FILES
-            src_gui/Main.qml
-            src_gui/User.qml
-            src_gui/Recipes.qml
-            src_gui/Search.qml
-            src_gui/Plan.qml
-            src_gui/Options.qml
-            src_gui/LoginRegisterComponents/InputRow.qml
-            src_gui/LoginRegisterComponents/TextRow.qml
-            src_gui/LoginRegisterComponents/SubmitButton.qml
-            src_gui/LoginRegisterComponents/SwitchForm.qml
-
-
-        RESOURCES
-            assets/options.png
-            assets/user.png
-            assets/recipe.png
-            assets/search.png
-            assets/plan.png
+        QML_FILES ${QML_FILES}
+        RESOURCES ${RESOURCES}
 )
 
 #CMakeConfig.hpp - constants from cmake for the entire project to use

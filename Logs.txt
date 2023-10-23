@@ -70,3 +70,465 @@ managerdb.cpp:19, void ManagerDB::connectDB() const
 [Info 2023-10-16 01:32:13]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
 :0, 
 
+-------------------------------
+[Execution 2023-10-16 01:55:21]
+-------------------------------
+
+[Info 2023-10-16 01:55:24]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-16 02:02:47]
+-------------------------------
+
+[Info 2023-10-16 02:03:02]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-17 22:30:51]
+-------------------------------
+
+[Info 2023-10-17 22:30:54]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-23 21:36:49]
+-------------------------------
+
+[Warning 2023-10-23 21:36:49]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:36:49]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 21:50:58]
+-------------------------------
+
+[Warning 2023-10-23 21:50:58]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:50:58]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 21:52:33]
+-------------------------------
+
+[Warning 2023-10-23 21:52:33]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:52:33]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 21:53:36]
+-------------------------------
+
+[Warning 2023-10-23 21:53:36]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:53:36]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 21:54:13]
+-------------------------------
+
+[Warning 2023-10-23 21:54:13]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:54:13]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 21:55:41]
+-------------------------------
+
+[Warning 2023-10-23 21:55:41]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:55:41]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 21:56:23]
+-------------------------------
+
+[Warning 2023-10-23 21:56:23]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:56:23]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 21:57:08]
+-------------------------------
+
+[Warning 2023-10-23 21:57:08]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:57:08]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 21:57:25]
+-------------------------------
+
+[Warning 2023-10-23 21:57:25]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:57:25]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 21:59:49]
+-------------------------------
+
+[Warning 2023-10-23 21:59:49]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 21:59:49]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:00:14]
+-------------------------------
+
+[Warning 2023-10-23 22:00:14]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:00:14]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:00:39]
+-------------------------------
+
+[Warning 2023-10-23 22:00:39]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:00:39]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:01:48]
+-------------------------------
+
+[Warning 2023-10-23 22:01:48]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:01:48]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:02:21]
+-------------------------------
+
+[Warning 2023-10-23 22:02:21]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:02:21]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:03:11]
+-------------------------------
+
+[Warning 2023-10-23 22:03:11]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:03:11]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:03:39]
+-------------------------------
+
+[Warning 2023-10-23 22:03:39]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:03:39]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:04:04]
+-------------------------------
+
+[Warning 2023-10-23 22:04:04]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:04:04]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:04:14]
+-------------------------------
+
+[Warning 2023-10-23 22:04:14]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:04:14]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:04:40]
+-------------------------------
+
+[Warning 2023-10-23 22:04:40]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:04:40]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:08:00]
+-------------------------------
+
+[Warning 2023-10-23 22:08:00]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:08:00]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:08:24]
+-------------------------------
+
+[Warning 2023-10-23 22:08:24]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:08:24]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:08:40]
+-------------------------------
+
+[Warning 2023-10-23 22:08:40]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:08:40]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:15:48]
+-------------------------------
+
+[Warning 2023-10-23 22:15:48]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:15:48]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:29:57]
+-------------------------------
+
+[Warning 2023-10-23 22:29:57]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:29:57]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:36:36]
+-------------------------------
+
+[Warning 2023-10-23 22:36:36]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 22:36:36]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 22:48:18]
+-------------------------------
+
+[Info 2023-10-23 22:48:32]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-23 22:49:13]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 22:50:36]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 22:51:21]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 22:51:48]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 22:52:00]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 22:52:19]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 22:56:23]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 22:58:25]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 23:00:16]
+-------------------------------
+
+[Warning 2023-10-23 23:00:16]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:00:16]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:00:39]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 23:01:08]
+-------------------------------
+
+[Warning 2023-10-23 23:01:08]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:01:08]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:02:15]
+-------------------------------
+
+[Warning 2023-10-23 23:02:16]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:02:16]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:04:35]
+-------------------------------
+
+[Warning 2023-10-23 23:04:35]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:04:35]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:05:59]
+-------------------------------
+
+[Warning 2023-10-23 23:05:59]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:05:59]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:06:27]
+-------------------------------
+
+[Warning 2023-10-23 23:06:27]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:06:27]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:06:42]
+-------------------------------
+
+[Warning 2023-10-23 23:06:42]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:06:42]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:22:39]
+-------------------------------
+
+[Warning 2023-10-23 23:22:39]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:22:39]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:22:51]
+-------------------------------
+
+[Warning 2023-10-23 23:22:51]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:22:51]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:24:56]
+-------------------------------
+
+[Warning 2023-10-23 23:24:56]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:24:56]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:26:30]
+-------------------------------
+
+[Warning 2023-10-23 23:26:30]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:26:30]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:26:53]
+-------------------------------
+
+[Warning 2023-10-23 23:26:53]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:26:53]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:32:21]
+-------------------------------
+
+[Warning 2023-10-23 23:32:21]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:32:21]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:43:01]
+-------------------------------
+
+[Warning 2023-10-23 23:43:01]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-23 23:43:01]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-23 23:44:07]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-23 23:44:32]
+-------------------------------
+
