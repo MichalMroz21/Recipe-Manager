@@ -25,7 +25,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 6.4 REQUIRED COMPONENTS Quick Sql)
 
 qt_standard_project_setup()
-qt_policy(SET QTP0001 NEW)
+qt_policy(SET QTP0001 NEW) #use new policy (old is deprecated)
 
 qt_add_executable(appRecipeManager)
 

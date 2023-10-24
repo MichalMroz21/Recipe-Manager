@@ -18,6 +18,7 @@ int main(int argc, char *argv[]){
 
     //add objects to Main.qml
     engine.rootContext()->setContextProperty("ROOT_PATH", ROOT_PATH);
+    engine.rootContext()->setContextProperty("managerDB", managerDB.data());
 
     const QUrl url(u"qrc:/RecipeManager/src_gui/Main.qml"_qs);
 

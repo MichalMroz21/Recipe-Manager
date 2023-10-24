@@ -543,3 +543,125 @@ Main.qml:-1,
 [Execution 2023-10-23 23:59:26]
 -------------------------------
 
+-------------------------------
+[Execution 2023-10-24 00:00:50]
+-------------------------------
+
+[Warning 2023-10-24 00:00:50]: QQmlApplicationEngine failed to load component
+:0, 
+
+[Warning 2023-10-24 00:00:50]: qrc:/RecipeManager/src_gui/Main.qml: No such file or directory
+Main.qml:-1, 
+
+-------------------------------
+[Execution 2023-10-24 00:00:59]
+-------------------------------
+
+[Info 2023-10-24 00:01:02]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-24 00:06:02]
+-------------------------------
+
+[Info 2023-10-24 00:06:06]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-24 11:14:43]
+-------------------------------
+
+[Info 2023-10-24 11:16:06]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-24 12:17:14]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-24 12:20:37]
+-------------------------------
+
+[Info 2023-10-24 12:20:46]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-24 20:08:02]
+-------------------------------
+
+[Fatal 2023-10-24 20:08:02]: ASSERT: "!isEmpty()" in file /home/roditu/Qt/6.5.1/gcc_64/include/QtCore/qlist.h, line 607
+qlist.h:607, 
+
+-------------------------------
+[Execution 2023-10-24 20:08:28]
+-------------------------------
+
+[Fatal 2023-10-24 20:08:28]: ASSERT: "!isEmpty()" in file /home/roditu/Qt/6.5.1/gcc_64/include/QtCore/qlist.h, line 607
+qlist.h:607, 
+
+-------------------------------
+[Execution 2023-10-24 20:08:48]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-24 20:09:01]
+-------------------------------
+
+-------------------------------
+[Execution 2023-10-24 20:09:09]
+-------------------------------
+
+[Fatal 2023-10-24 20:09:09]: ASSERT: "!isEmpty()" in file /home/roditu/Qt/6.5.1/gcc_64/include/QtCore/qlist.h, line 607
+qlist.h:607, 
+
+-------------------------------
+[Execution 2023-10-24 20:19:59]
+-------------------------------
+
+[Info 2023-10-24 20:19:59]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectDefault()
+
+[Info 2023-10-24 20:20:00]: Established default connection successfully
+managerdb.cpp:23, void ManagerDB::connectDefault()
+
+-------------------------------
+[Execution 2023-10-24 20:42:03]
+-------------------------------
+
+[Info 2023-10-24 20:42:03]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectDefault()
+
+[Info 2023-10-24 20:42:03]: Established default connection successfully
+managerdb.cpp:23, void ManagerDB::connectDefault()
+
+[Info 2023-10-24 20:42:03]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-24 20:42:03]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-24 20:42:03]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-24 20:42:22]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-24 22:30:00]
+-------------------------------
+
+[Info 2023-10-24 22:30:00]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-24 22:30:00]: Established default connection successfully
+managerdb.cpp:23, void ManagerDB::connectToDB()
+
+[Info 2023-10-24 22:30:00]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-24 22:30:00]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-24 22:30:00]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+

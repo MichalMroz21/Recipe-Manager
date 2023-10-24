@@ -12,6 +12,15 @@ Window {
     height: 480
     visible: true
 
+    Connections{
+        target: managerDB
+    }
+
+    Component.onCompleted: {
+        managerDB.connectToDB()
+        managerDB.loadDriver()
+    }
+
     ToolBar {
         contentHeight: 40
         z: 1

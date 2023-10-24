@@ -1,6 +1,7 @@
-add_subdirectory(LoginRegisterComponents)
-
 file(GLOB FOLDER_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml)
+
+file(GLOB LOGIN_REGISTER_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} LoginRegisterComponents/*.qml)
+list(APPEND FOLDER_FILES ${LOGIN_REGISTER_FILES})
 
 foreach(QML_FILE ${FOLDER_FILES})
     add_files(${QML_FILE} "QML_FILES")

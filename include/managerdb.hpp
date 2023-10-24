@@ -15,9 +15,11 @@ class ManagerDB : public QObject
     Q_OBJECT
 public:
     explicit ManagerDB(QObject *parent = nullptr);
-    void listDrivers() const, connectDB() const;
-    bool loadDriver();
+    void listDrivers();
 
+public slots:
+    void connectToDB();
+    bool loadDriver();
 
 signals:
 

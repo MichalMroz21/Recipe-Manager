@@ -2,25 +2,25 @@
 
 ManagerDB::ManagerDB(QObject *parent) : QObject{parent}{}
 
-void ManagerDB::connectDB() const{
+void ManagerDB::connectToDB(){
 
-    qInfo() << "Opening Database";
+    qInfo() << "Establishing default connection";
 
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
 
-    db.setHostName("db4free.net");
+    db.setHostName("cooldb.mysql.database.azure.com");
 
-    db.setDatabaseName("");
-    db.setUserName("");
-    db.setPassword("");
+    db.setDatabaseName("recipe_manager");
+    db.setUserName("default_user");
+    db.setPassword("default_user_pass");
 
     if(!db.open()){
-        qCritical() << "Failed to connect!";
+        qCritical() << "Failed to establish default connection!";
         qCritical() << db.lastError().text();
         return;
     }
 
-    qInfo() << "Connected successfully";
+    qInfo() << "Established default connection successfully";
     db.close();
 }
 
@@ -41,7 +41,7 @@ bool ManagerDB::loadDriver(){
     return false;
 }
 
-void ManagerDB::listDrivers() const {
+void ManagerDB::listDrivers(){
 
     qInfo() << "Listing drivers";
 
