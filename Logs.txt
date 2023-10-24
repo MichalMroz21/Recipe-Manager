@@ -665,3 +665,22 @@ managerdb.cpp:33, bool ManagerDB::loadDriver()
 [Info 2023-10-24 22:30:00]: Loaded the plugin
 managerdb.cpp:36, bool ManagerDB::loadDriver()
 
+-------------------------------
+[Execution 2023-10-25 00:11:00]
+-------------------------------
+
+[Info 2023-10-25 00:11:01]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-25 00:11:01]: Established default connection successfully
+managerdb.cpp:23, void ManagerDB::connectToDB()
+
+[Info 2023-10-25 00:11:01]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-25 00:11:01]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-25 00:11:01]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
