@@ -45,6 +45,7 @@ qt_add_qml_module(appRecipeManager
 
 #CMakeConfig.hpp - constants from cmake for the entire project to use
 add_definitions(-DROOT_PATH_CMAKE=${CMAKE_CURRENT_SOURCE_DIR})
+add_definitions(-DMAX_CREDENTIAL_LENGTH_CMAKE=20)
 
 target_include_directories(appRecipeManager PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include

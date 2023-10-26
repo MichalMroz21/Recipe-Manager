@@ -3,6 +3,14 @@
 
 User::User(QObject *parent) : QObject{parent}{}
 
+bool User::getIsLoggedIn() const{
+    return isLoggedIn;
+}
+
+void User::setIsLoggedIn(bool newIsLoggedIn){
+    isLoggedIn = newIsLoggedIn;
+}
+
 QString User::getPassword() const{
     return password;
 }
@@ -24,31 +32,59 @@ void User::setPasswordAndLogin(const QString& newLogin, const QString& newPasswo
     password = newPassword;
 }
 
+void User::loginUser(){
+    bool isValid = checkCredentials();
+
+    isLoggedIn = isValid;
+
+    if(isLoggedIn) qInfo() << "User successfully logged in!";
+    else qWarning() << "User failed to log in!";
+}
+
+QString User::extractError(const QString& errorMsg){
+    return errorMsg.left(errorMsg.lastIndexOf('.'));
+}
+
 bool User::checkCredentials(){
 
     QSqlQuery query{};
 
     bool isValid{false};
 
-    //validate_credentials(IN in_login VARCHAR(20), IN in_password VARCHAR(20), OUT out_is_valid BOOLEAN)
-    query.prepare("CALL validate_credentials(?, ?, ?)");
+    //validate_credentials(in_login VARCHAR(20), in_password VARCHAR(20)) RETURNS BOOLEAN
+    query.prepare("SELECT validate_credentials(?, ?)");
 
-    query.addBindValue(login);
-    query.addBindValue(password);
-    query.addBindValue(isValid, QSql::Out);
+    query.bindValue(0, login);
+    query.bindValue(1, password);
 
     if(query.exec()){
-        isValid = query.boundValue(2).toBool();
+
+        if(query.next()){
+            isValid = query.value(0).toBool();
+        }
+        else {
+            qWarning() << "No result from the function validate_credentials";
+        }
+
+        qInfo() << isValid;
     }
 
     else{
-        qWarning() << "Failed to execute validate_credentials: " << query.lastError().text();
+        QString fullErrorMsg = query.lastError().text(),
+                guiMessage = extractError(fullErrorMsg);
+
+        qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);
     }
 
     return isValid;
 }
 
-void User::registerUser(){
+void User::registerUser(const QString& confirmPassword){
+
+    if(confirmPassword != password){
+        qWarning() << "Passwords do not match!";
+        return;
+    }
 
     if(password.size() > MAX_PASSWORD_LENGTH){
         qWarning() << "Password length is too big!";
@@ -71,8 +107,12 @@ void User::registerUser(){
     if(query.exec()){
         qInfo() << "User registered successfully!";
     }
+
     else{
-        qWarning() << "Failed to execute registerUser: " << query.lastError().text();
+        QString fullErrorMsg = query.lastError().text(),
+            guiMessage = extractError(fullErrorMsg);
+
+        qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);
     }
 }
 

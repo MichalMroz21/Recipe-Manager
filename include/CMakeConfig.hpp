@@ -7,4 +7,10 @@
     #define ROOT_PATH ""
     #endif
 
+    #ifdef MAX_CREDENTIAL_LENGTH_CMAKE
+    #define MAX_CREDENTIAL_LENGTH MAX_CREDENTIAL_LENGTH_CMAKE
+    #else
+    #define MAX_CREDENTIAL_LENGTH -1
+    #endif
+
 #endif // CMAKECONFIG_HPP

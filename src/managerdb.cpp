@@ -15,14 +15,14 @@ void ManagerDB::connectToDB(){
     db.setPassword("default_user_pass");
 
     if(!db.open()){
-        qCritical() << "Failed to establish default connection!";
-        qCritical() << db.lastError().text();
+        qCritical() << QString("Failed to establish default connection!\n %1").arg(db.lastError().text());
         return;
     }
 
     qInfo() << "Established default connection successfully";
-    db.close();
 }
+
+
 
 bool ManagerDB::loadDriver(){
 

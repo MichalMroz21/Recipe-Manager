@@ -8,6 +8,10 @@ import "LoginRegisterComponents"
 Page {
     property bool layoutSwitch: true
 
+    Connections{
+        target: user
+    }
+
     Loader{
         id: layoutLoader
         sourceComponent: layoutSwitch === true ? loginForm : registerForm
@@ -35,9 +39,19 @@ Page {
                 echoMode: TextInput.Password
             }
 
+            InputRow {
+                id: registerConfirmPassword
+                placeholderText: qsTr("Confirm Password")
+                echoMode: TextInput.Password
+            }
+
             SubmitButton {
                 id: registerButton
                 text: qsTr("Register")
+                onClicked:{
+                    user.setPasswordAndLogin(registerLogin.text, registerPassword.text);
+                    user.registerUser(registerConfirmPassword.text);
+                }
             }
 
             SwitchForm{
@@ -71,6 +85,10 @@ Page {
             SubmitButton {
                 id: loginButton
                 text: qsTr("Log In")
+                onClicked:{
+                    user.setPasswordAndLogin(login.text, password.text);
+                    user.loginUser();
+                }
             }
 
             SwitchForm{

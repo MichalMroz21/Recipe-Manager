@@ -17,8 +17,8 @@ Window {
     }
 
     Component.onCompleted: {
-        managerDB.connectToDB()
         managerDB.loadDriver()
+        managerDB.connectToDB()
     }
 
     ToolBar {

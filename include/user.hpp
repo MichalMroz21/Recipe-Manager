@@ -4,14 +4,17 @@
 #include <QObject>
 #include <QSqlQuery>
 
-constexpr int MAX_PASSWORD_LENGTH = 20,
-              MAX_LOGIN_LENGTH = 20;
+#include "CMakeConfig.hpp"
+
+constexpr int MAX_PASSWORD_LENGTH = MAX_CREDENTIAL_LENGTH,
+              MAX_LOGIN_LENGTH = MAX_CREDENTIAL_LENGTH;
 
 class User : public QObject
 {
     Q_OBJECT
 private:
     QString password{}, login{};
+    bool isLoggedIn{};
 
 public:
     explicit User(QObject *parent = nullptr);
@@ -22,11 +25,16 @@ public:
     QString getLogin() const;
     void setLogin(const QString& newLogin);
 
-    void setPasswordAndLogin(const QString& newLogin, const QString& newPassword);
+    bool getIsLoggedIn() const;
+    void setIsLoggedIn(bool newIsLoggedIn);
+
+    QString extractError(const QString& errorMsg);
 
 public slots:
     bool checkCredentials();
-    void registerUser();
+    void registerUser(const QString& confirmPassword);
+    void setPasswordAndLogin(const QString& newLogin, const QString& newPassword);
+    void loginUser();
 
 signals:
 

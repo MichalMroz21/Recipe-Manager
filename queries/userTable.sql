@@ -4,7 +4,7 @@ USE recipe_manager;
 
 SELECT * FROM users;
 
-DELETE FROM users;
+--DELETE FROM users;
 
 --ALTER TABLE users
 --ADD COLUMN salt VARCHAR(32) NOT NULL;

@@ -5,7 +5,7 @@ import QtQuick.Layouts 6.3
 
 TextField {
 
-    property var maxLength : 20;
+    property var maxLength : MAX_CREDENTIAL_LENGTH;
 
     Layout.alignment: Qt.AlignCenter
 
