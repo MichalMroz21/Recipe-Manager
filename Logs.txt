@@ -2776,3 +2776,190 @@ user.cpp:127, void User::registerUser(const QString&)
 [Warning 2023-10-26 23:28:23]: "Failed to execute void User::registerUser(const QString&): Login must only contain letters or numbers. QMYSQL: Unable to execute statement"
 user.cpp:127, void User::registerUser(const QString&)
 
+-------------------------------
+[Execution 2023-10-26 23:30:31]
+-------------------------------
+
+[Info 2023-10-26 23:30:31]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:30:31]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:30:31]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:30:31]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:30:31]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:30:44]: "Failed to execute void User::registerUser(const QString&): Login must only contain letters or numbers. QMYSQL: Unable to execute statement"
+user.cpp:127, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:30:49]: "Failed to execute void User::registerUser(const QString&): User with this login already exists. QMYSQL: Unable to execute statement"
+user.cpp:127, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:30:52]: "Failed to execute void User::registerUser(const QString&): User with this login already exists. QMYSQL: Unable to execute statement"
+user.cpp:127, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:30:55]: "Failed to execute void User::registerUser(const QString&): User with this login already exists. QMYSQL: Unable to execute statement"
+user.cpp:127, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:30:56]: "Failed to execute void User::registerUser(const QString&): User with this login already exists. QMYSQL: Unable to execute statement"
+user.cpp:127, void User::registerUser(const QString&)
+
+[Info 2023-10-26 23:31:10]: User registered successfully!
+user.cpp:119, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:35:10]
+-------------------------------
+
+[Info 2023-10-26 23:35:10]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:35:10]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:35:10]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:35:10]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:35:10]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:35:12]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:82, bool User::checkCredentials()
+
+-------------------------------
+[Execution 2023-10-26 23:35:49]
+-------------------------------
+
+[Info 2023-10-26 23:35:49]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:35:49]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:35:49]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:35:49]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:35:49]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:35:51]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:81, bool User::checkCredentials()
+
+-------------------------------
+[Execution 2023-10-26 23:36:15]
+-------------------------------
+
+[Info 2023-10-26 23:36:16]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:36:16]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:36:16]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:36:16]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:36:16]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:36:18]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:81, bool User::checkCredentials()
+
+-------------------------------
+[Execution 2023-10-26 23:37:02]
+-------------------------------
+
+[Info 2023-10-26 23:37:02]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:37:02]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:37:02]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:37:02]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:37:02]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:37:03]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:77, bool User::checkCredentials()
+
+[Warning 2023-10-26 23:37:10]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:77, bool User::checkCredentials()
+
+[Info 2023-10-26 23:38:05]: true
+user.cpp:69, bool User::checkCredentials()
+
+-------------------------------
+[Execution 2023-10-26 23:42:08]
+-------------------------------
+
+[Info 2023-10-26 23:42:08]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:42:08]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:42:08]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:42:08]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:42:08]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:42:10]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:70, bool User::checkCredentials()
+
+[Warning 2023-10-26 23:42:10]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:70, bool User::checkCredentials()
+
+[Warning 2023-10-26 23:42:14]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:70, bool User::checkCredentials()
+
+[Warning 2023-10-26 23:42:16]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:43:11]
+-------------------------------
+
+[Info 2023-10-26 23:43:11]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:43:11]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:43:11]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:43:11]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:43:11]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:43:16]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:119, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:43:33]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:70, bool User::checkCredentials()
+

@@ -34,12 +34,8 @@ void User::setPasswordAndLogin(const QString& newLogin, const QString& newPasswo
 }
 
 void User::loginUser(){
-    bool isValid = checkCredentials();
-
-    isLoggedIn = isValid;
-
-    if(isLoggedIn) qInfo() << "User successfully logged in!";
-    else qWarning() << "User failed to log in!";
+    isLoggedIn = checkCredentials();
+    if(isLoggedIn) emit changeLoginError("User successfully logged in!");
 }
 
 QString User::extractError(const QString& errorMsg){
@@ -66,17 +62,12 @@ bool User::checkCredentials(){
         else {
             qWarning() << "No result from the function validate_credentials";
         }
-
-        qInfo() << isValid;
     }
 
     else{
-        QString fullErrorMsg = query.lastError().text(),
-                guiMessage = extractError(fullErrorMsg);
-
-        qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);
-
-        emit changeLoginError(guiMessage);
+        QString fullErrorMsg = query.lastError().text();
+        emit changeLoginError(extractError(fullErrorMsg));
+        qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);    
     }
 
     return isValid;
@@ -85,7 +76,7 @@ bool User::checkCredentials(){
 void User::registerUser(const QString& confirmPassword){
 
     bool credValid = true;
-    QString guiMessage{};
+    QString guiMessage{}, color{"red"};
 
     if(confirmPassword != password){
         guiMessage = "Passwords do not match!";
@@ -116,7 +107,8 @@ void User::registerUser(const QString& confirmPassword){
     query.addBindValue(password);
 
     if(query.exec()){
-        qInfo() << "User registered successfully!";
+        guiMessage = "User registered successfully!";
+        color = "green";
     }
 
     else{
@@ -125,9 +117,9 @@ void User::registerUser(const QString& confirmPassword){
         guiMessage = extractError(fullErrorMsg);
 
         qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);
-
-        emit changeRegisterError(guiMessage);
     }
+
+    emit changeRegisterError(guiMessage, color);
 }
 
 

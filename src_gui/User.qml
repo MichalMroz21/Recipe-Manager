@@ -63,8 +63,9 @@ Page {
                 Connections{
                     target: user
 
-                    function onChangeRegisterError(text){
+                    function onChangeRegisterError(text, color){
                         registerError.text = text;
+                        registerError.color = color;
                     }
                 }
 
@@ -112,8 +113,9 @@ Page {
                 Connections{
                     target: user
 
-                    function onChangeLoginError(text){
+                    function onChangeLoginError(text, color = "red"){
                         loginError.text = text;
+                        loginError.color = color;
                     }
                 }
 

@@ -38,8 +38,8 @@ public slots:
     void loginUser();
 
 signals:
-    void changeRegisterError(const QString& text);
-    void changeLoginError(const QString& text);
+    void changeRegisterError(const QString& text, const QString& color = "red");
+    void changeLoginError(const QString& text, const QString& color = "red");
 
 };
 
