@@ -1,7 +1,8 @@
 #include "user.hpp"
 #include "qsqlerror.h"
 
-User::User(QObject *parent) : QObject{parent}{}
+
+User::User(QObject* parent) {}
 
 bool User::getIsLoggedIn() const{
     return isLoggedIn;
@@ -74,6 +75,8 @@ bool User::checkCredentials(){
                 guiMessage = extractError(fullErrorMsg);
 
         qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);
+
+        emit changeLoginError(guiMessage);
     }
 
     return isValid;
@@ -81,18 +84,26 @@ bool User::checkCredentials(){
 
 void User::registerUser(const QString& confirmPassword){
 
+    bool credValid = true;
+    QString guiMessage{};
+
     if(confirmPassword != password){
-        qWarning() << "Passwords do not match!";
-        return;
+        guiMessage = "Passwords do not match!";
+        credValid = false;
     }
 
     if(password.size() > MAX_PASSWORD_LENGTH){
-        qWarning() << "Password length is too big!";
-        return;
+        guiMessage = "Password length is too big!";
+        credValid = false;
     }
 
     if(login.size() > MAX_LOGIN_LENGTH){
-        qWarning() << "Login length is too big!";
+        guiMessage = "Login length is too big!";
+        credValid = false;
+    }
+
+    if(credValid == false){
+        emit changeRegisterError(guiMessage);
         return;
     }
 
@@ -109,10 +120,13 @@ void User::registerUser(const QString& confirmPassword){
     }
 
     else{
-        QString fullErrorMsg = query.lastError().text(),
-            guiMessage = extractError(fullErrorMsg);
+        QString fullErrorMsg = query.lastError().text();
+
+        guiMessage = extractError(fullErrorMsg);
 
         qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);
+
+        emit changeRegisterError(guiMessage);
     }
 }
 

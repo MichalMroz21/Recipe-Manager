@@ -2163,3 +2163,616 @@ user.cpp:40, void User::loginUser()
 [Info 2023-10-26 21:36:25]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
 :0, 
 
+-------------------------------
+[Execution 2023-10-26 21:39:08]
+-------------------------------
+
+[Info 2023-10-26 21:39:08]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 21:39:08]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 21:39:08]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 21:39:08]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 21:39:08]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+-------------------------------
+[Execution 2023-10-26 21:40:34]
+-------------------------------
+
+[Info 2023-10-26 21:40:34]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 21:40:34]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 21:40:34]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 21:40:34]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 21:40:35]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+-------------------------------
+[Execution 2023-10-26 22:00:38]
+-------------------------------
+
+[Fatal 2023-10-26 22:00:38]: ASSERT: "!isEmpty()" in file /home/roditu/Qt/6.5.1/gcc_64/include/QtCore/qlist.h, line 607
+qlist.h:607, 
+
+-------------------------------
+[Execution 2023-10-26 22:02:41]
+-------------------------------
+
+[Fatal 2023-10-26 22:02:41]: ASSERT: "!isEmpty()" in file /home/roditu/Qt/6.5.1/gcc_64/include/QtCore/qlist.h, line 607
+qlist.h:607, 
+
+-------------------------------
+[Execution 2023-10-26 22:03:40]
+-------------------------------
+
+[Fatal 2023-10-26 22:03:40]: ASSERT: "!isEmpty()" in file /home/roditu/Qt/6.5.1/gcc_64/include/QtCore/qlist.h, line 607
+qlist.h:607, 
+
+-------------------------------
+[Execution 2023-10-26 22:04:08]
+-------------------------------
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/Main.qml:20: ReferenceError: managerDB is not defined
+Main.qml:20, 
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/LoginRegisterComponents/InputRow.qml:8: ReferenceError: MAX_CREDENTIAL_LENGTH is not defined
+InputRow.qml:8, 
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/LoginRegisterComponents/InputRow.qml:8: ReferenceError: MAX_CREDENTIAL_LENGTH is not defined
+InputRow.qml:8, 
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/User.qml:12: ReferenceError: user is not defined
+User.qml:12, 
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/Main.qml:16: ReferenceError: managerDB is not defined
+Main.qml:16, 
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/User.qml:12: ReferenceError: user is not defined
+User.qml:12, 
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/Main.qml:16: ReferenceError: managerDB is not defined
+Main.qml:16, 
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/User.qml:12: ReferenceError: user is not defined
+User.qml:12, 
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/Main.qml:16: ReferenceError: managerDB is not defined
+Main.qml:16, 
+
+[Warning 2023-10-26 22:04:08]: qrc:/RecipeManager/src_gui/User.qml:1: ReferenceError: user is not defined
+User.qml:1, 
+
+[Warning 2023-10-26 22:04:18]: QSqlQuery::prepare: database not open
+:0, 
+
+[Warning 2023-10-26 22:04:18]: "Failed to execute void User::registerUser(const QString&): Driver not loaded Driver not loaded"
+user.cpp:119, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 22:06:32]
+-------------------------------
+
+[Fatal 2023-10-26 22:06:32]: ASSERT: "!isEmpty()" in file /home/roditu/Qt/6.5.1/gcc_64/include/QtCore/qlist.h, line 607
+qlist.h:607, 
+
+-------------------------------
+[Execution 2023-10-26 22:07:00]
+-------------------------------
+
+[Info 2023-10-26 22:07:00]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 22:07:00]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 22:07:00]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 22:07:00]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 22:07:00]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+-------------------------------
+[Execution 2023-10-26 23:02:59]
+-------------------------------
+
+[Info 2023-10-26 23:02:59]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:02:59]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:02:59]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:02:59]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:02:59]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:03:02]: "Failed to execute void User::registerUser(const QString&): execute command denied to user 'default_user'@'%' for routine 'recipe_manager.insert_user' QMYSQL: Unable to execute query"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:03:46]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Info 2023-10-26 23:03:59]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-10-26 23:04:32]
+-------------------------------
+
+[Info 2023-10-26 23:04:32]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:04:32]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:04:32]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:04:32]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:04:32]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:04:38]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:05:01]
+-------------------------------
+
+[Info 2023-10-26 23:05:01]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:05:01]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:05:01]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:05:01]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:05:01]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:05:04]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:05:04]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:07:45]
+-------------------------------
+
+[Info 2023-10-26 23:07:45]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:07:45]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:07:45]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:07:45]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:07:45]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:07:48]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:07:48]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:07:57]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:07:57]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:07:57]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:07:57]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+[Info 2023-10-26 23:07:58]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-10-26 23:08:04]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:08:04]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:08:34]
+-------------------------------
+
+[Warning 2023-10-26 23:08:34]: qrc:/RecipeManager/src_gui/User.qml:11:5: QML Connections: Detected function "onChangeRegisterError" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+User.qml:11, 
+
+[Info 2023-10-26 23:08:34]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:08:34]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:08:34]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:08:34]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:08:34]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:08:39]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:08:39]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:08:40]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:08:40]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:08:40]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:08:40]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:08:41]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:08:41]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:10:11]
+-------------------------------
+
+[Warning 2023-10-26 23:10:11]: qrc:/RecipeManager/src_gui/User.qml:11:5: QML Connections: Detected function "onChangeRegisterError" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+User.qml:11, 
+
+[Info 2023-10-26 23:10:11]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:10:11]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:10:11]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:10:11]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:10:11]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:10:13]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:10:13]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:12:49]
+-------------------------------
+
+[Info 2023-10-26 23:12:49]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:12:49]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:12:49]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:12:49]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:12:49]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:12:52]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:12:52]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:12:52]: qrc:/RecipeManager/src_gui/User.qml:15: ReferenceError: System is not defined
+User.qml:15, 
+
+-------------------------------
+[Execution 2023-10-26 23:13:20]
+-------------------------------
+
+[Info 2023-10-26 23:13:20]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:13:20]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:13:20]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:13:20]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:13:20]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:13:23]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:116, void User::registerUser(const QString&)
+
+[Debug 2023-10-26 23:13:23]: "Login or password is shorter than 5 characters"
+user.cpp:117, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:13:23]: qrc:/RecipeManager/src_gui/User.qml:15: ReferenceError: registerError is not defined
+User.qml:15, 
+
+-------------------------------
+[Execution 2023-10-26 23:14:58]
+-------------------------------
+
+[Info 2023-10-26 23:14:58]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:14:58]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:14:58]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:14:58]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:14:58]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:15:02]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:15:02]: qrc:/RecipeManager/src_gui/User.qml:108: ReferenceError: registerError is not defined
+User.qml:108, 
+
+-------------------------------
+[Execution 2023-10-26 23:17:05]
+-------------------------------
+
+[Info 2023-10-26 23:17:05]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:17:05]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:17:05]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:17:05]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:17:05]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:17:10]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:17:10]: qrc:/RecipeManager/src_gui/User.qml:118: ReferenceError: changeRegisterText is not defined
+User.qml:118, 
+
+-------------------------------
+[Execution 2023-10-26 23:18:27]
+-------------------------------
+
+[Info 2023-10-26 23:18:27]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:18:27]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:18:27]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:18:27]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:18:27]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+-------------------------------
+[Execution 2023-10-26 23:18:50]
+-------------------------------
+
+[Info 2023-10-26 23:18:50]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:18:50]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:18:50]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:18:50]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:18:50]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:18:53]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:18:53]: qrc:/RecipeManager/src_gui/User.qml:61: Error: Cannot assign to non-existent property "text"
+User.qml:61, 
+
+-------------------------------
+[Execution 2023-10-26 23:22:10]
+-------------------------------
+
+[Info 2023-10-26 23:22:10]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:22:10]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:22:10]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:22:10]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:22:11]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:22:13]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:22:13]: qrc:/RecipeManager/src_gui/User.qml:61: Error: Invalid write to global property "text"
+User.qml:61, 
+
+-------------------------------
+[Execution 2023-10-26 23:23:19]
+-------------------------------
+
+[Info 2023-10-26 23:23:19]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:23:19]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:23:19]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:23:19]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:23:20]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:23:21]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:23:37]
+-------------------------------
+
+[Info 2023-10-26 23:23:37]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:23:37]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:23:37]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:23:37]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:23:37]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:23:40]: qrc:/RecipeManager/src_gui/User.qml:59:17: QML Connections: Detected function "onChangeRegisterError" in Connections element. This is probably intended to be a signal handler but no signal of the target matches the name.
+User.qml:59, 
+
+[Warning 2023-10-26 23:23:41]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:24:22]
+-------------------------------
+
+[Info 2023-10-26 23:24:22]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:24:22]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:24:22]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:24:22]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:24:22]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:24:28]: "Failed to execute bool User::checkCredentials(): Invalid login or password. QMYSQL: Unable to store statement results"
+user.cpp:77, bool User::checkCredentials()
+
+[Warning 2023-10-26 23:24:28]: User failed to log in!
+user.cpp:42, void User::loginUser()
+
+[Warning 2023-10-26 23:24:30]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+[Info 2023-10-26 23:24:31]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-10-26 23:24:36]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:24:40]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:25:06]: "Failed to execute void User::registerUser(const QString&): Login must only contain letters or numbers. QMYSQL: Unable to execute statement"
+user.cpp:118, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:25:09]: Passwords do not match!
+user.cpp:88, void User::registerUser(const QString&)
+
+-------------------------------
+[Execution 2023-10-26 23:28:08]
+-------------------------------
+
+[Info 2023-10-26 23:28:08]: Loading driver/plugin
+managerdb.cpp:29, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:28:08]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:33, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:28:08]: Loaded the plugin
+managerdb.cpp:36, bool ManagerDB::loadDriver()
+
+[Info 2023-10-26 23:28:08]: Establishing default connection
+managerdb.cpp:7, void ManagerDB::connectToDB()
+
+[Info 2023-10-26 23:28:09]: Established default connection successfully
+managerdb.cpp:22, void ManagerDB::connectToDB()
+
+[Warning 2023-10-26 23:28:13]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:127, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:28:17]: "Failed to execute void User::registerUser(const QString&): Login or password is shorter than 5 characters. QMYSQL: Unable to execute statement"
+user.cpp:127, void User::registerUser(const QString&)
+
+[Warning 2023-10-26 23:28:23]: "Failed to execute void User::registerUser(const QString&): Login must only contain letters or numbers. QMYSQL: Unable to execute statement"
+user.cpp:127, void User::registerUser(const QString&)
+

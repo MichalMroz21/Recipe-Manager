@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QSqlQuery>
+#include <QQmlProperty>
 
 #include "CMakeConfig.hpp"
 
@@ -37,6 +38,8 @@ public slots:
     void loginUser();
 
 signals:
+    void changeRegisterError(const QString& text);
+    void changeLoginError(const QString& text);
 
 };
 

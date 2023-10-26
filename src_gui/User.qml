@@ -57,6 +57,19 @@ Page {
             SwitchForm{
                 text: "Go back to login";
             }
+
+            ErrorRow{
+
+                Connections{
+                    target: user
+
+                    function onChangeRegisterError(text){
+                        registerError.text = text;
+                    }
+                }
+
+                id: registerError;
+            }
         }
     }
 
@@ -93,6 +106,18 @@ Page {
 
             SwitchForm{
                 text: "New? Register!";
+            }
+
+            ErrorRow{
+                Connections{
+                    target: user
+
+                    function onChangeLoginError(text){
+                        loginError.text = text;
+                    }
+                }
+
+                id: loginError;
             }
         }
     }
