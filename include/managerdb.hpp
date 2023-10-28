@@ -18,17 +18,10 @@
 #include <QImage>
 #include <QBuffer>
 
-#include "CMakeConfig.hpp"
 
 class ManagerDB : public QObject
 {
     Q_OBJECT
-
-private:
-    const bool INSERT_RECIPES_CONST = INSERT_RECIPES;
-    const QString PATH_TO_RECIPES_CONST = PATH_TO_RECIPES,
-                  PATH_TO_RECIPE_IMAGES_CONST = PATH_TO_RECIPE_IMAGES;
-
 public:
     explicit ManagerDB(QObject *parent = nullptr);
 

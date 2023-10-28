@@ -1,6 +1,6 @@
 #include "managerdb.hpp"
 #include "rapidcsv.hpp"
-
+#include "CMakeConfig.hpp"
 
 ManagerDB::ManagerDB(QObject *parent) : QObject{parent}{}
 
@@ -11,13 +11,8 @@ void ManagerDB::setupDB(){
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
 
     db.setHostName("cooldb.mysql.database.azure.com");
-
-    db.setDatabaseName("recipe_manager");
-    db.setUserName("charismaticbear8734");
-    db.setPassword("gr@fikakomputerowa9087");
-
-    //db.setUserName("default_user");
-    //db.setPassword("default_user_pass");
+    db.setUserName("default_user");
+    db.setPassword("default_user_pass");
 
     if(!db.open()){
         qCritical() << QString("Failed to establish default connection!\n %1").arg(db.lastError().text());
@@ -27,7 +22,7 @@ void ManagerDB::setupDB(){
     qInfo() << "Established default connection successfully";
 
     if(!loadDriver()) return; //setup driver
-    if(INSERT_RECIPES_CONST) insertRecipes(); //Requires connecting as an admin user
+    if(INSERT_RECIPES) insertRecipes(); //Requires connecting as an admin user
 }
 
 bool ManagerDB::loadDriver(){
@@ -66,7 +61,7 @@ void ManagerDB::convertFractions(QString& input) {
 
 QByteArray ManagerDB::imageToBinary(QString &curr)
 {
-    QString path = QString("%1/%2%3").arg(PATH_TO_RECIPE_IMAGES_CONST, curr, ".jpg");
+    QString path = QString("%1/%2%3").arg(PATH_TO_RECIPE_IMAGES, curr, ".jpg");
 
     QImage image(path);
 
@@ -93,12 +88,12 @@ void ManagerDB::insertRecipes(){
 
     using namespace std;
 
-    if(!QFile(PATH_TO_RECIPES_CONST).exists()){
-        qWarning() << QString("Path to recipes: %1 doesnt exist, exiting function").arg(PATH_TO_RECIPES_CONST);
+    if(!QFile(PATH_TO_RECIPES).exists()){
+        qWarning() << QString("Path to recipes: %1 doesnt exist, exiting function").arg(PATH_TO_RECIPES);
         return;
     }
 
-    rapidcsv::Document doc(PATH_TO_RECIPES_CONST.toStdString(), rapidcsv::LabelParams(), rapidcsv::SeparatorParams(',', false, rapidcsv::sPlatformHasCR, true));
+    rapidcsv::Document doc(PATH_TO_RECIPES, rapidcsv::LabelParams(), rapidcsv::SeparatorParams(',', false, rapidcsv::sPlatformHasCR, true));
 
     vector<vector<string>> columns{};
 

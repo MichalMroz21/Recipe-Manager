@@ -2,8 +2,9 @@
 # ----------------------------------------------------------------------------
 
 recipes.csv
-recipeImages
 Logs.txt
+recipeImages
+
 
 *~
 *.autosave
