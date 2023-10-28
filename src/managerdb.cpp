@@ -6,11 +6,14 @@ ManagerDB::ManagerDB(QObject *parent) : QObject{parent}{}
 
 void ManagerDB::setupDB(){
 
+    if(!loadDriver()) return; //setup driver
+
     qInfo() << "Establishing default connection";
 
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
 
     db.setHostName("cooldb.mysql.database.azure.com");
+    db.setDatabaseName("recipe_manager");
     db.setUserName("default_user");
     db.setPassword("default_user_pass");
 
@@ -21,7 +24,6 @@ void ManagerDB::setupDB(){
 
     qInfo() << "Established default connection successfully";
 
-    if(!loadDriver()) return; //setup driver
     if(INSERT_RECIPES) insertRecipes(); //Requires connecting as an admin user
 }
 
