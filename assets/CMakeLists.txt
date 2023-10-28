@@ -4,3 +4,6 @@ foreach(RESOURCE ${FOLDER_FILES})
     add_files(${RESOURCE} "RESOURCES")
 endforeach()
 
+
+
+

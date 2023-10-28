@@ -7,7 +7,8 @@ DROP FUNCTION IF EXISTS validate_credentials;
 CREATE PROCEDURE insert_user(IN in_login VARCHAR(20), IN in_password VARCHAR(20))
 BEGIN
     DECLARE user_id INT;
-    SELECT get_id_with_login(in_login) INTO user_id;
+
+    SET in_login = LOWER(in_login);
 
     IF CHAR_LENGTH(in_login) < 5 OR CHAR_LENGTH(in_password) < 5 THEN
         SIGNAL SQLSTATE '45000' SET message_text = 'Login or password is shorter than 5 characters.';
@@ -21,6 +22,8 @@ BEGIN
         SIGNAL SQLSTATE '45000' SET message_text = 'Password contains not allowed characters.';
     END IF;
 
+    SELECT get_id_with_login(in_login) INTO user_id;
+
     IF user_id <> -1 THEN
         SIGNAL SQLSTATE '45000' SET message_text = 'User with this login already exists.';      
     END IF;
@@ -32,7 +35,10 @@ END;
 CREATE FUNCTION get_id_with_login(in_login VARCHAR(20)) RETURNS INT
 BEGIN
     DECLARE out_id INT;
+
+    SET in_login = LOWER(in_login);
     SET out_id = (-1);
+
     SELECT U.id INTO out_id FROM users AS U WHERE in_login = U.login LIMIT 1;
     RETURN out_id;
 END;
@@ -47,8 +53,9 @@ BEGIN
     DECLARE out_is_valid BOOLEAN;
 
     SET out_is_valid = FALSE;
+    SET in_login = LOWER(in_login);
 
-    CALL get_id_with_login(in_login, user_id);
+    SELECT get_id_with_login(in_login) INTO user_id;
 
     IF user_id = -1 THEN
         SET out_is_valid = FALSE;

@@ -26,7 +26,6 @@ public:
     QString getLogin() const;
     void setLogin(const QString& newLogin);
 
-    bool getIsLoggedIn() const;
     void setIsLoggedIn(bool newIsLoggedIn);
 
     QString extractError(const QString& errorMsg);
@@ -36,6 +35,7 @@ public slots:
     void registerUser(const QString& confirmPassword);
     void setPasswordAndLogin(const QString& newLogin, const QString& newPassword);
     void loginUser();
+    bool getIsLoggedIn() const;
 
 signals:
     void changeRegisterError(const QString& text, const QString& color = "red");

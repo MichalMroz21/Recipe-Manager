@@ -35,7 +35,7 @@ void User::setPasswordAndLogin(const QString& newLogin, const QString& newPasswo
 
 void User::loginUser(){
     isLoggedIn = checkCredentials();
-    if(isLoggedIn) emit changeLoginError("User successfully logged in!");
+    if(isLoggedIn) emit changeLoginError("User successfully logged in!", "green");
 }
 
 QString User::extractError(const QString& errorMsg){
@@ -59,7 +59,7 @@ bool User::checkCredentials(){
         if(query.next()){
             isValid = query.value(0).toBool();
         }
-        else {
+        else{
             qWarning() << "No result from the function validate_credentials";
         }
     }
@@ -113,9 +113,7 @@ void User::registerUser(const QString& confirmPassword){
 
     else{
         QString fullErrorMsg = query.lastError().text();
-
         guiMessage = extractError(fullErrorMsg);
-
         qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);
     }
 

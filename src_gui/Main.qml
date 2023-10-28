@@ -16,9 +16,12 @@ Window {
         target: managerDB
     }
 
+    Connections{
+        target: user
+    }
+
     Component.onCompleted: {
-        managerDB.loadDriver()
-        managerDB.connectToDB()
+        managerDB.setupDB()
     }
 
     ToolBar {
@@ -142,7 +145,7 @@ Window {
 
     StackView{
        id: stackView
-       initialItem: "User.qml"
+       initialItem: "LoginRegister.qml"
        anchors.fill: parent
     }
 
@@ -210,6 +213,11 @@ Window {
             case 3: pageSelected = "Plan.qml"; break;
             case 4: pageSelected = "Options.qml"; break;
         }
+
+        if(index !== 4 && !user.getIsLoggedIn()){
+            pageSelected = "LoginRegister.qml";
+        }
+
         stackView.push(pageSelected);
     }
 

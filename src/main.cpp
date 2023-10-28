@@ -2,6 +2,9 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 
+#include <vector>
+#include <string>
+
 #include "managerdb.hpp"
 #include "debug_interceptor.hpp"
 #include "user.hpp"

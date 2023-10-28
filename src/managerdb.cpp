@@ -1,8 +1,10 @@
 #include "managerdb.hpp"
+#include "rapidcsv.hpp"
+
 
 ManagerDB::ManagerDB(QObject *parent) : QObject{parent}{}
 
-void ManagerDB::connectToDB(){
+void ManagerDB::setupDB(){
 
     qInfo() << "Establishing default connection";
 
@@ -11,8 +13,11 @@ void ManagerDB::connectToDB(){
     db.setHostName("cooldb.mysql.database.azure.com");
 
     db.setDatabaseName("recipe_manager");
-    db.setUserName("default_user");
-    db.setPassword("default_user_pass");
+    db.setUserName("charismaticbear8734");
+    db.setPassword("gr@fikakomputerowa9087");
+
+    //db.setUserName("default_user");
+    //db.setPassword("default_user_pass");
 
     if(!db.open()){
         qCritical() << QString("Failed to establish default connection!\n %1").arg(db.lastError().text());
@@ -20,15 +25,16 @@ void ManagerDB::connectToDB(){
     }
 
     qInfo() << "Established default connection successfully";
+
+    if(!loadDriver()) return; //setup driver
+    if(INSERT_RECIPES_CONST) insertRecipes(); //Requires connecting as an admin user
 }
-
-
 
 bool ManagerDB::loadDriver(){
 
     qInfo() << "Loading driver/plugin";
 
-    QPluginLoader loader("/home/roditu/Qt/6.5.1/gcc_64/plugins/sqldrivers/libqsqlmysql.so");
+    QPluginLoader loader("/home/roditu/Qt/6.5.1/gcc_64/plugins/sqldrivers/libqsqlmysql.so"); //for now hardcoded
 
     qInfo() << loader.metaData();
 
@@ -38,7 +44,106 @@ bool ManagerDB::loadDriver(){
     }
 
     qCritical() << loader.errorString();
+
     return false;
+}
+
+void ManagerDB::convertFractions(QString& input) {
+
+    static QRegularExpression fractionRegex(QStringLiteral("[\u00BC-\u00BE\u2150-\u215E]"));
+
+    QRegularExpressionMatchIterator i = fractionRegex.globalMatch(input);
+
+    while (i.hasNext()) {
+        QRegularExpressionMatch match = i.next();
+        QString fraction = match.captured(0);
+
+        fraction = fraction.normalized(QString::NormalizationForm_KD);
+
+        input.replace(match.capturedStart(), match.capturedLength(), fraction);
+    }
+}
+
+QByteArray ManagerDB::imageToBinary(QString &curr)
+{
+    QString path = QString("%1/%2%3").arg(PATH_TO_RECIPE_IMAGES_CONST, curr, ".jpg");
+
+    QImage image(path);
+
+    if (image.isNull()) {
+        qWarning() << "Failed to load image.";
+        return QByteArray();
+    }
+
+    QByteArray byteArray;
+    QBuffer buffer(&byteArray);
+
+    buffer.open(QIODevice::WriteOnly);
+
+    if (!image.save(&buffer, "JPG")) {
+        qWarning() << "Failed to convert image to binary.";
+        return QByteArray();
+    }
+
+    return byteArray;
+}
+
+//Requires connecting as an admin user
+void ManagerDB::insertRecipes(){
+
+    using namespace std;
+
+    if(!QFile(PATH_TO_RECIPES_CONST).exists()){
+        qWarning() << QString("Path to recipes: %1 doesnt exist, exiting function").arg(PATH_TO_RECIPES_CONST);
+        return;
+    }
+
+    rapidcsv::Document doc(PATH_TO_RECIPES_CONST.toStdString(), rapidcsv::LabelParams(), rapidcsv::SeparatorParams(',', false, rapidcsv::sPlatformHasCR, true));
+
+    vector<vector<string>> columns{};
+
+    QList<QString> columnNames{"id", "title", "ingredients", "instructions", "cleaned_ingredients", "image_bin"};
+
+    foreach(QString columnName, columnNames){
+        columns.push_back(doc.GetColumn<string>(columnName.toStdString()));
+    }
+
+    int recipesSize = columns[0].size(), columnsSize = columns.size();
+
+    for(int i = 0; i < recipesSize; i++){
+
+        QSqlQuery query;
+
+        query.prepare("INSERT INTO recipes (title, ingredients, instructions, image_bin, cleaned_ingredients) "
+                      "VALUES (:title, :ingredients, :instructions, :image_bin, :cleaned_ingredients)");
+
+        for(int j = 1; j < columnsSize; j++){
+
+            QString curr = QString::fromStdString(columns[j][i]);
+
+            if(columnNames[j] == "image_bin"){
+
+                QByteArray byteImage = imageToBinary(curr);
+
+                if(byteImage.isNull()){
+                    qWarning() << QString("Failed to convert image: %1, exiting function").arg(curr);
+                    return;
+                }
+
+                query.bindValue(QString(":%1").arg(columnNames[j]), byteImage, QSql::Binary);
+            }
+
+            else{
+                convertFractions(curr);
+                query.bindValue(QString(":%1").arg(columnNames[j]), curr);
+            }
+        }
+
+        if(!query.exec()){
+            qWarning() << QString("Error executing query: %1, exiting function").arg(query.lastError().text());
+            return;
+        }
+    }
 }
 
 void ManagerDB::listDrivers(){
@@ -49,7 +154,7 @@ void ManagerDB::listDrivers(){
         qInfo() << driver;
 
         QSqlDatabase db = QSqlDatabase::addDatabase(driver);
-        QSqlDriver *obj = db.driver();
+        QSqlDriver* obj = db.driver();
 
         qInfo() << "Transactions: " << obj->hasFeature(QSqlDriver::DriverFeature::Transactions);
         qInfo() << "QuerySize: " << obj->hasFeature(QSqlDriver::DriverFeature::QuerySize);
@@ -68,3 +173,9 @@ void ManagerDB::listDrivers(){
         qInfo() << "CancelQuery: " << obj->hasFeature(QSqlDriver::DriverFeature::CancelQuery);
     }
 }
+
+
+
+
+
+
