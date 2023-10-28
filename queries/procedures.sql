@@ -1,6 +1,7 @@
 USE recipe_manager;
 
 DROP PROCEDURE IF EXISTS insert_user;
+
 DROP FUNCTION IF EXISTS get_id_with_login;
 DROP FUNCTION IF EXISTS validate_credentials;
 
