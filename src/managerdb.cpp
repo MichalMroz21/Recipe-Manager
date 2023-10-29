@@ -116,9 +116,9 @@ void ManagerDB::insertRecipes(){
 
         for(int j = 1; j < columnsSize; j++){
 
-            QString curr = QString::fromStdString(columns[j][i]);
+            QString curr = QString::fromStdString(columns[j][i]), columnName = columnNames[j];
 
-            if(columnNames[j] == "image_bin"){
+            if(columnName == "image_bin"){
 
                 QByteArray byteImage = imageToBinary(curr);
 
@@ -127,12 +127,12 @@ void ManagerDB::insertRecipes(){
                     return;
                 }
 
-                query.bindValue(QString(":%1").arg(columnNames[j]), byteImage, QSql::Binary);
+                query.bindValue(QString(":%1").arg(columnName), byteImage, QSql::Binary);
             }
 
             else{
                 convertFractions(curr);
-                query.bindValue(QString(":%1").arg(columnNames[j]), curr);
+                query.bindValue(QString(":%1").arg(columnName), curr);
             }
         }
 

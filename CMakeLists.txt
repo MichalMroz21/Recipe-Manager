@@ -46,6 +46,7 @@ qt_add_qml_module(appRecipeManager
 #CMakeConfig.hpp - constants from cmake for the entire project to use
 add_definitions(-DROOT_PATH_CMAKE=${CMAKE_CURRENT_SOURCE_DIR})
 add_definitions(-DMAX_CREDENTIAL_LENGTH_CMAKE=20)
+add_definitions(-DMAX_TITLE_LENGTH_CMAKE=150)
 add_definitions(-DINSERT_RECIPES_CMAKE=false)
 add_definitions(-DPATH_TO_RECIPES_CMAKE=\"${CMAKE_CURRENT_SOURCE_DIR}/assets/recipes.csv\")
 add_definitions(-DPATH_TO_RECIPE_IMAGES_CMAKE=\"${CMAKE_CURRENT_SOURCE_DIR}/assets/recipeImages\")

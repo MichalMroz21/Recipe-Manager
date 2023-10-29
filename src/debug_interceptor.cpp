@@ -17,7 +17,7 @@ QObject{parent}, displayToConsole(displayToConsole), saveToFile(saveToFile){
 
         QString execTitle = "[Execution " + getCurrDate() + "]";
 
-        out << QString(execTitle.size(), '-') << Qt::endl << execTitle << Qt::endl << QString(execTitle.size(), '-') << QString(2, '\n');
+        out << QString("%1\n%2\n%1\n").arg(QString(execTitle.size(), '-'), execTitle);
 
         qInstallMessageHandler(&Debug_Interceptor::myMessageOutputHandler);
     }
@@ -76,7 +76,7 @@ void Debug_Interceptor::myMessageOutput(QtMsgType type, const QMessageLogContext
     }
 
     if(saveToFile){
-        toLogFile << "[" + msgType + " " + getCurrDate() + "]: " << localMsg.constData() << "\n" << contextFile << ":" << context.line << ", " << context.function << QString(2, '\n');
+        toLogFile << QString("[%1 %2]: %3\n%4:%5, %6\n\n").arg(msgType, getCurrDate(), localMsg.constData(), contextFile, QString::number(context.line), function);
     }
 
     if(displayToConsole){

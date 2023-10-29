@@ -3,7 +3,7 @@ import QtQuick.Controls 6.3
 
 
 Page {
-    title: qsTr("Home")
+    title: qsTr("Options")
 
     Label {
         color: "#f91b02"

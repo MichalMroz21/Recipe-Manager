@@ -20,7 +20,7 @@ BEGIN
     SELECT COUNT(*) INTO user_count FROM users;
 
     IF user_count >= 5000 THEN
-        SIGNAL SQLSTATE '45000' SET message_text = 'Exceeded maximum number of users';
+        SIGNAL SQLSTATE '45000' SET message_text = 'Exceeded maximum number of users.';
     END IF;
 END;
 

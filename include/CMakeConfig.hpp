@@ -31,4 +31,10 @@
     #define PATH_TO_RECIPE_IMAGES ""
     #endif
 
+    #ifdef MAX_TITLE_LENGTH_CMAKE
+    #define MAX_TITLE_LENGTH MAX_TITLE_LENGTH_CMAKE
+    #else
+    #define MAX_TITLE_LENGTH -1
+    #endif
+
 #endif // CMAKECONFIG_HPP

@@ -23,6 +23,7 @@ int main(int argc, char *argv[]){
 
     //adding constants to every .qml
     engine.rootContext()->setContextProperty("MAX_CREDENTIAL_LENGTH", MAX_CREDENTIAL_LENGTH);
+    engine.rootContext()->setContextProperty("MAX_TITLE_LENGTH", MAX_TITLE_LENGTH);
     engine.rootContext()->setContextProperty("ROOT_PATH", ROOT_PATH);
 
     //adding objects to every .qml

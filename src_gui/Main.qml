@@ -12,6 +12,8 @@ Window {
     height: 480
     visible: true
 
+    property string hiddenWindow : "User.qml";
+
     Connections{
         target: managerDB
     }
@@ -186,7 +188,7 @@ Window {
         switch (index) {
             case 0: return "lightblue";
             case 1: return "lightgreen";
-            case 2: return "lightyellow";
+            case 2: return "orangered";
             case 3: return "deeppink";
             case 4: return "lightgray";
             default: return "lightgray";
@@ -197,7 +199,7 @@ Window {
         switch (index) {
             case 0: return "blue";
             case 1: return "green";
-            case 2: return "yellow";
+            case 2: return "orange";
             case 3: return "red";
             case 4: return "gray";
             default: return "lightgray";
@@ -205,7 +207,9 @@ Window {
     }
 
     function switchPage(index) {
+
         var pageSelected;
+
         switch (index) {
             case 0: pageSelected = "User.qml"; break;
             case 1: pageSelected = "Recipes.qml"; break;
@@ -214,9 +218,11 @@ Window {
             case 4: pageSelected = "Options.qml"; break;
         }
 
+        hiddenWindow = pageSelected;
+
         if(index !== 4 && !user.getIsLoggedIn()){
             pageSelected = "LoginRegister.qml";
-        }
+        }      
 
         stackView.push(pageSelected);
     }

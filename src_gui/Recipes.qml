@@ -2,7 +2,7 @@ import QtQuick 2.15
 import QtQuick.Controls 6.3
 
 Page {
-    title: qsTr("Home1")
+    title: qsTr("Recipes")
 
     Label {
         color: "#f91b02"

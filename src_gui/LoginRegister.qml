@@ -118,7 +118,7 @@ Page {
                         loginError.color = color;
 
                         if(color === "green"){
-                            stackView.push("User.qml");
+                            stackView.push(hiddenWindow);
                         }
                     }
                 }
