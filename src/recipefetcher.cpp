@@ -5,6 +5,10 @@ RecipeFetcher::RecipeFetcher(ManagerDB* man, QObject *parent) : QObject{parent}{
     QObject::connect(this, &RecipeFetcher::makeThreadConnection, man, &ManagerDB::makeThreadConnection, Qt::BlockingQueuedConnection);
 }
 
+RecipeFetcher::~RecipeFetcher()
+{
+    if(db.isOpen()) db.close();
+}
 
 void RecipeFetcher::searchByTitleAsync(QString title){
 

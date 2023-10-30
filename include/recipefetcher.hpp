@@ -21,6 +21,7 @@ class RecipeFetcher : public QObject
     Q_OBJECT
 public:
     explicit RecipeFetcher(ManagerDB* man, QObject *parent = nullptr);
+    ~RecipeFetcher();
 
     QSqlDatabase db{};
 
