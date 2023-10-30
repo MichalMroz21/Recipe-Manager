@@ -14,6 +14,7 @@ class User : public QObject
 {
     Q_OBJECT
 private:
+    QSqlDatabase db{};
     QString password{}, login{};
     bool isLoggedIn{};
 
@@ -36,6 +37,8 @@ public slots:
     void setPasswordAndLogin(const QString& newLogin, const QString& newPassword);
     void loginUser();
     bool getIsLoggedIn() const;
+
+    void sendDBUser(QSqlDatabase db);
 
 signals:
     void changeRegisterError(const QString& text, const QString& color = "red");

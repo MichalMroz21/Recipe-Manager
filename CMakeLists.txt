@@ -22,7 +22,7 @@ project(RecipeManager VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.4 REQUIRED COMPONENTS Quick Sql)
+find_package(Qt6 6.4 REQUIRED COMPONENTS Quick Sql Concurrent)
 
 qt_standard_project_setup()
 qt_policy(SET QTP0001 NEW) #use new policy (old is deprecated)
@@ -53,11 +53,13 @@ add_definitions(-DPATH_TO_RECIPE_IMAGES_CMAKE=\"${CMAKE_CURRENT_SOURCE_DIR}/asse
 
 target_include_directories(appRecipeManager PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/libs
 )
 
 target_link_libraries(appRecipeManager
     PRIVATE Qt6::Quick
     PRIVATE Qt${QT_VERSION_MAJOR}::Sql
+    PRIVATE Qt${QT_VERSION_MAJOR}::Concurrent
 )
 
 set_target_properties(appRecipeManager PROPERTIES

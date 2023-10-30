@@ -18,12 +18,17 @@
 #include <QImage>
 #include <QBuffer>
 
+#include "user.hpp"
 
 class ManagerDB : public QObject
 {
     Q_OBJECT
+private:
+    QSqlDatabase db{};
+
 public:
-    explicit ManagerDB(QObject *parent = nullptr);
+    explicit ManagerDB(User* user, QObject *parent = nullptr);
+    ~ManagerDB();
 
     void listDrivers();
     void convertFractions(QString& input);
@@ -35,9 +40,10 @@ public slots:
     void insertRecipes(); //Requires connecting as an admin user
 
     bool loadDriver();
+    void makeThreadConnection(QSqlDatabase& dbThread);
 
 signals:
-
+    void sendDBUser(QSqlDatabase db);
 };
 
 #endif // MANAGERDB_HPP

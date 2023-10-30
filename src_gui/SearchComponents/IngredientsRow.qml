@@ -54,7 +54,7 @@ RowLayout {
 
     Label {
         id: hoverLabel
-        text: "Ingredients"
+        text: "Hover to view"
         color: "orange"
         font.pixelSize: 16
 

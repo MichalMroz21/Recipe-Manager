@@ -8,6 +8,7 @@
 #include "managerdb.hpp"
 #include "debug_interceptor.hpp"
 #include "user.hpp"
+#include "recipefetcher.hpp"
 
 #include "CMakeConfig.hpp"
 
@@ -16,8 +17,10 @@ int main(int argc, char *argv[]){
     QGuiApplication app(argc, argv);
 
     auto debugInterceptor{ Debug_Interceptor::getInstance() };
-    auto managerDB{ QSharedPointer<ManagerDB>(new ManagerDB()) };
     auto user { QSharedPointer<User>(new User()) };
+
+    auto managerDB{ QSharedPointer<ManagerDB>(new ManagerDB(user.data())) };
+    auto recipeFetcher { QSharedPointer<RecipeFetcher>(new RecipeFetcher(managerDB.data()))};
 
     QQmlApplicationEngine engine;
 
@@ -29,6 +32,7 @@ int main(int argc, char *argv[]){
     //adding objects to every .qml
     engine.rootContext()->setContextProperty("managerDB", managerDB.data());
     engine.rootContext()->setContextProperty("user", user.data());
+    engine.rootContext()->setContextProperty("recipeFetcher", recipeFetcher.data());
 
     const QUrl url(u"qrc:/RecipeManager/src_gui/Main.qml"_qs);
 

@@ -2,15 +2,21 @@
 #include "rapidcsv.hpp"
 #include "CMakeConfig.hpp"
 
-ManagerDB::ManagerDB(QObject *parent) : QObject{parent}{}
+ManagerDB::ManagerDB(User* user, QObject *parent) : QObject{parent}
+{
+    QObject::connect(this, &ManagerDB::sendDBUser, user, &User::sendDBUser);
+}
+
+ManagerDB::~ManagerDB()
+{
+    if(db.isOpen()) db.close();
+}
 
 void ManagerDB::setupDB(){
 
-    if(!loadDriver()) return; //setup driver
-
     qInfo() << "Establishing default connection";
 
-    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+    db = QSqlDatabase::addDatabase("QMYSQL", "default_connection");
 
     db.setHostName("cooldb.mysql.database.azure.com");
     db.setDatabaseName("recipe_manager");
@@ -23,6 +29,8 @@ void ManagerDB::setupDB(){
     }
 
     qInfo() << "Established default connection successfully";
+
+    emit sendDBUser(db);
 
     if(INSERT_RECIPES) insertRecipes(); //Requires connecting as an admin user
 }
@@ -43,6 +51,27 @@ bool ManagerDB::loadDriver(){
     qCritical() << loader.errorString();
 
     return false;
+}
+
+void ManagerDB::makeThreadConnection(QSqlDatabase& dbThread)
+{
+    qInfo() << "Establishing new thread connection (or replacing)";
+
+    QSqlDatabase dbTemp = QSqlDatabase::addDatabase("QMYSQL", "thread_connection");
+
+    dbTemp.setHostName("cooldb.mysql.database.azure.com");
+    dbTemp.setDatabaseName("recipe_manager");
+    dbTemp.setUserName("default_user");
+    dbTemp.setPassword("default_user_pass");
+
+    if(!dbTemp.open()){
+        qCritical() << QString("Failed to establish new thread connection!\n %1").arg(dbTemp.lastError().text());
+        return;
+    }
+
+    qInfo() << "Established new thread connection successfully";
+
+    dbThread = dbTemp;
 }
 
 void ManagerDB::convertFractions(QString& input) {
@@ -109,7 +138,7 @@ void ManagerDB::insertRecipes(){
 
     for(int i = 0; i < recipesSize; i++){
 
-        QSqlQuery query;
+        QSqlQuery query{db};
 
         query.prepare("INSERT INTO recipes (title, ingredients, instructions, image_bin, cleaned_ingredients) "
                       "VALUES (:title, :ingredients, :instructions, :image_bin, :cleaned_ingredients)");

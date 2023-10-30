@@ -8,6 +8,11 @@ bool User::getIsLoggedIn() const{
     return isLoggedIn;
 }
 
+void User::sendDBUser(QSqlDatabase db)
+{
+    this->db = db;
+}
+
 void User::setIsLoggedIn(bool newIsLoggedIn){
     isLoggedIn = newIsLoggedIn;
 }
@@ -44,7 +49,7 @@ QString User::extractError(const QString& errorMsg){
 
 bool User::checkCredentials(){
 
-    QSqlQuery query{};
+    QSqlQuery query{db};
 
     bool isValid{false};
 
@@ -98,7 +103,7 @@ void User::registerUser(const QString& confirmPassword){
         return;
     }
 
-    QSqlQuery query{};
+    QSqlQuery query{db};
 
     //insert_user(IN in_login VARCHAR(20), IN in_password VARCHAR(20))
     query.prepare("CALL insert_user(?, ?)");

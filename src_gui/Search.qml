@@ -8,10 +8,20 @@ import "SearchComponents"
 Page {
     title: qsTr("Search")
 
+    Connections{
+        target: recipeFetcher
+
+        function onTitleSearchFinished(success) {
+            bi.running = false;
+        }
+    }
+
     ColumnLayout{
         Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
         anchors.centerIn: parent
         spacing: 0.065 * root.height
+
+        id: searchLayout
 
         SearchTextRow {
             text: qsTr("Search by title")
@@ -23,10 +33,14 @@ Page {
 
         SubmitButton {
             id: searchTitleButton
-            onClicked:{}
+            onClicked:{
+                bi.running = true;
+                recipeFetcher.searchByTitle(titleText.text);
+            }
         }
 
         SearchTextRow {
+            Layout.topMargin: root.height / 20
             text: qsTr("Search by ingredients")
         }
 
@@ -40,18 +54,22 @@ Page {
         }
 
         RowLayout{
-             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
 
             SearchCheckbox{
                 text: qsTr("Sort by Title");
-                Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
                 id: sortByTitle
             }
+
             SearchCheckbox{
                 text: qsTr("Sort by Instructions length");
-                Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
                 id: sortByIngredients
             }
+        }
+
+        BusyIndicator{
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+            id: bi
+            running: false
         }
 
         SearchErrorRow{

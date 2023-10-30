@@ -1,9 +1,7 @@
 USE recipe_manager;
 
 DESCRIBE users;
---DESCRIBE recipes;
+DESCRIBE recipes;
 
 SELECT * FROM users;
 --SELECT * FROM recipes;
-
- 

@@ -1,6 +1,7 @@
 USE recipe_manager;
 
 DROP PROCEDURE IF EXISTS insert_user;
+DROP PROCEDURE IF EXISTS search_by_title;
 
 DROP FUNCTION IF EXISTS get_id_with_login;
 DROP FUNCTION IF EXISTS validate_credentials;
@@ -81,3 +82,8 @@ BEGIN
 END;
 
 
+CREATE PROCEDURE search_by_title(IN in_title VARCHAR(150))
+BEGIN
+    SELECT id, title, ingredients, instructions, image_bin FROM recipes
+    WHERE id = 1 OR id = 2;
+END;
