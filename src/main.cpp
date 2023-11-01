@@ -17,6 +17,7 @@ int main(int argc, char *argv[]){
     QGuiApplication app(argc, argv);
 
     auto debugInterceptor = Debug_Interceptor::getInstance();
+
     auto user = QSharedPointer<User>(new User());
 
     auto managerDB = QSharedPointer<ManagerDB>(new ManagerDB(user.data()));

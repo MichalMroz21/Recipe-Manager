@@ -53,7 +53,6 @@ add_definitions(-DPATH_TO_RECIPE_IMAGES_CMAKE=\"${CMAKE_CURRENT_SOURCE_DIR}/asse
 
 target_include_directories(appRecipeManager PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/libs
 )
 
 target_link_libraries(appRecipeManager

@@ -12,14 +12,16 @@ Page {
         target: recipeFetcher
 
         function onTitleSearchFinished(success) {
-            bi.running = false;
+            biTitle.running = false;
         }
+
     }
 
     ColumnLayout{
+
         Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
         anchors.centerIn: parent
-        spacing: 0.065 * root.height
+        spacing: 0.02 * (root.width + root.height)
 
         id: searchLayout
 
@@ -32,10 +34,16 @@ Page {
         }
 
         SubmitButton {
+
             id: searchTitleButton
+
             onClicked:{
-                bi.running = true;
+                biTitle.running = true;
                 recipeFetcher.searchByTitle(titleText.text);
+            }
+
+            SearchIndicator{
+                id: biTitle
             }
         }
 
@@ -48,32 +56,49 @@ Page {
             id: ingredientsRow
         }
 
+
         SubmitButton {
             id: searchIngredientsButton
-            onClicked:{}
+
+            onClicked:{
+                biSearch.running = true;
+            }
+
+            SearchIndicator{
+                id: biSearch
+            }
         }
 
         RowLayout{
 
+            scale: Math.min(root.width * 0.002, root.height * 0.002)
+
+            Layout.alignment: Qt.AlignHCenter
+
             SearchCheckbox{
+
+                Layout.alignment: Qt.AlignLeft
                 text: qsTr("Sort by Title");
                 id: sortByTitle
             }
 
             SearchCheckbox{
+
+                Layout.alignment: Qt.AlignRight
                 text: qsTr("Sort by Instructions length");
                 id: sortByIngredients
             }
         }
 
-        BusyIndicator{
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-            id: bi
-            running: false
-        }
 
         SearchErrorRow{
             id: searchError;
         }
     }
+
+
+
+
+
+
 }

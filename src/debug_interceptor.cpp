@@ -82,5 +82,6 @@ void Debug_Interceptor::myMessageOutput(QtMsgType type, const QMessageLogContext
     if(displayToConsole){
         fprintf(stdout, "[%s]: %s \n%s:%u, %s\n\n", msgType.toUtf8().constData(), localMsg.constData(), contextFileConst, context.line, function);
     }
+
 }
 

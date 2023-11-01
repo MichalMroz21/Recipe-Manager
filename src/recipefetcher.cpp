@@ -1,7 +1,8 @@
 #include "recipefetcher.hpp"
 
 
-RecipeFetcher::RecipeFetcher(ManagerDB* man, QObject *parent) : QObject{parent}{
+RecipeFetcher::RecipeFetcher(ManagerDB* man, QObject *parent) : QObject{parent}
+{
     QObject::connect(this, &RecipeFetcher::makeThreadConnection, man, &ManagerDB::makeThreadConnection, Qt::BlockingQueuedConnection);
 }
 
@@ -28,7 +29,7 @@ void RecipeFetcher::searchByTitleAsync(QString title){
         QString title = query.value(1).toString();
         QString ingredients = query.value(2).toString();
         QString instructions = query.value(3).toString();
-        QByteArray imageBin = query.value(4).toByteArray();
+        //QByteArray imageBin = query.value(4).toByteArray();
 
         qDebug() << "ID:" << id << " Title:" << title << " Ingredients:" << ingredients << " Instructions:" << instructions;
     }
@@ -36,12 +37,9 @@ void RecipeFetcher::searchByTitleAsync(QString title){
     emit titleSearchFinished(true);
 }
 
-
-
 void RecipeFetcher::searchByTitle(QString title)
 {
-    QtConcurrent::run([=](){
+    static_cast<void>(QtConcurrent::run([=](){
         searchByTitleAsync(title);
-    });
-
+    }));
 }

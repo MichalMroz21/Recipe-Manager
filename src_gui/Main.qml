@@ -25,7 +25,6 @@ Window {
     Component.onCompleted: {
         managerDB.loadDriver()
         managerDB.setupDB()
-
     }
 
     ToolBar {

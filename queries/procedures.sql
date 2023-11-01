@@ -85,5 +85,5 @@ END;
 CREATE PROCEDURE search_by_title(IN in_title VARCHAR(150))
 BEGIN
     SELECT id, title, ingredients, instructions, image_bin FROM recipes
-    WHERE id = 1 OR id = 2;
+    WHERE title = in_title;
 END;
