@@ -1,14 +1,38 @@
 #include "recipefetcher.hpp"
 
 
-RecipeFetcher::RecipeFetcher(ManagerDB* man, QObject *parent) : QObject{parent}
-{
+QList<QList<QString> > RecipeFetcher::getRecipesStrings(){
+    return recipesStrings;
+}
+
+void RecipeFetcher::setRecipesStrings(const QList<QList<QString> > &newRecipesStrings){
+    recipesStrings = newRecipesStrings;
+}
+
+QList<QByteArray> RecipeFetcher::getRecipesImages(){
+    return recipesImages;
+}
+
+void RecipeFetcher::setRecipesImages(const QList<QByteArray> &newRecipesImages){
+    recipesImages = newRecipesImages;
+}
+
+RecipeFetcher::RecipeFetcher(ManagerDB* man, QObject *parent) : QObject{parent}{
     QObject::connect(this, &RecipeFetcher::makeThreadConnection, man, &ManagerDB::makeThreadConnection, Qt::BlockingQueuedConnection);
 }
 
-RecipeFetcher::~RecipeFetcher()
-{
+RecipeFetcher::~RecipeFetcher(){
     if(db.isOpen()) db.close();
+}
+
+void RecipeFetcher::clearRecipes()
+{
+    foreach(QList<QString> recipe, recipesStrings){
+        recipe.clear();
+    }
+
+    recipesImages.clear();
+    recipesStrings.clear();
 }
 
 void RecipeFetcher::searchByTitleAsync(QString title){
@@ -17,9 +41,14 @@ void RecipeFetcher::searchByTitleAsync(QString title){
 
     QSqlQuery query{db};
 
+    QString error{};
+
+    bool success = true;
+
     if (!query.exec(QString("CALL search_by_title('%1')").arg(title))) {
-        qWarning() << "Error executing stored procedure:" << query.lastError().text();
-        emit titleSearchFinished(false);
+        error = query.lastError().text();
+        success = false;
+        qWarning() << "Error executing stored procedure:" << error;
     }
 
     while (query.next()) {
@@ -29,16 +58,21 @@ void RecipeFetcher::searchByTitleAsync(QString title){
         QString title = query.value(1).toString();
         QString ingredients = query.value(2).toString();
         QString instructions = query.value(3).toString();
-        //QByteArray imageBin = query.value(4).toByteArray();
+        QByteArray imageBin = query.value(4).toByteArray();
 
         qDebug() << "ID:" << id << " Title:" << title << " Ingredients:" << ingredients << " Instructions:" << instructions;
+
+        recipesStrings.append(QList<QString>{title, ingredients, instructions});
+        recipesImages.append(imageBin);
     }
 
-    emit titleSearchFinished(true);
+    emit titleSearchFinished(success, error);
 }
 
 void RecipeFetcher::searchByTitle(QString title)
 {
+    clearRecipes();
+
     static_cast<void>(QtConcurrent::run([=](){
         searchByTitleAsync(title);
     }));

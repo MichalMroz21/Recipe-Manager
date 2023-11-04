@@ -11,10 +11,16 @@ Page {
     Connections{
         target: recipeFetcher
 
-        function onTitleSearchFinished(success) {
+        function onTitleSearchFinished(success, error) {
             biTitle.running = false;
-        }
 
+            if(success){
+                stackView.push("ViewSearch.qml");
+            }
+            else{
+                searchError.text = error;
+            }
+        }
     }
 
     ColumnLayout{

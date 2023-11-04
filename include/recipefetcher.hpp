@@ -19,18 +19,30 @@
 class RecipeFetcher : public QObject
 {
     Q_OBJECT
+private:
+    QList<QList<QString>> recipesStrings{};
+    QList<QByteArray> recipesImages{};
+
 public:
     explicit RecipeFetcher(ManagerDB* man, QObject *parent = nullptr);
     ~RecipeFetcher();
 
     QSqlDatabase db{};
 
+    void clearRecipes();
+
+    void setRecipesStrings(const QList<QList<QString> > &newRecipesStrings);
+    void setRecipesImages(const QList<QByteArray> &newRecipesImages);
+
 public slots:
+    QList<QList<QString> > getRecipesStrings();
+    QList<QByteArray> getRecipesImages();
+
     void searchByTitle(QString title);
     void searchByTitleAsync(QString title);
 
 signals:
-    void titleSearchFinished(bool success);
+    void titleSearchFinished(bool success, QString error);
     void makeThreadConnection(QSqlDatabase& db);
 
 };

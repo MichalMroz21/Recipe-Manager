@@ -10946,3 +10946,1488 @@ managerdb.cpp:31, void ManagerDB::setupDB()
 [Info 2023-11-01 18:50:25]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
 :0, 
 
+-------------------------------
+[Execution 2023-11-01 18:53:49]
+-------------------------------
+[Info 2023-11-01 18:53:49]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:53:49]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:53:49]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:53:49]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:53:49]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:53:51]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 18:57:16]
+-------------------------------
+[Info 2023-11-01 18:57:16]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:57:16]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:57:16]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:57:16]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:57:16]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:57:18]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 18:57:36]
+-------------------------------
+[Info 2023-11-01 18:57:36]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:57:36]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:57:36]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:57:36]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:57:36]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:57:37]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 18:58:31]
+-------------------------------
+[Info 2023-11-01 18:58:31]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:58:31]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:58:31]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:58:31]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:58:32]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:58:32]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-01 18:58:41]: qrc:/RecipeManager/src_gui/ViewSearch.qml:18:17: TypeError: Cannot read property 'width' of null
+ViewSearch.qml:18, 
+
+-------------------------------
+[Execution 2023-11-01 18:59:31]
+-------------------------------
+[Info 2023-11-01 18:59:32]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:59:32]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:59:32]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 18:59:32]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:59:32]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 18:59:33]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:00:37]
+-------------------------------
+[Info 2023-11-01 19:00:37]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:00:37]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:00:37]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:00:37]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:00:37]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:00:38]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-01 19:00:41]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-01 19:00:41]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:33 Cannot assign to non-existent property "border"
+Main.qml:149, 
+
+[Warning 2023-11-01 19:00:41]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-01 19:00:41]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:33 Cannot assign to non-existent property "border"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-01 19:01:01]
+-------------------------------
+[Info 2023-11-01 19:01:01]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:01:01]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:01:01]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:01:01]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:01:01]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+-------------------------------
+[Execution 2023-11-01 19:01:12]
+-------------------------------
+[Info 2023-11-01 19:01:12]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:01:12]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:01:12]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:01:12]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:01:13]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:01:14]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:03:23]
+-------------------------------
+[Info 2023-11-01 19:03:24]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:03:24]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:03:24]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:03:24]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:03:24]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:03:25]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:03:50]
+-------------------------------
+[Info 2023-11-01 19:03:50]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:03:50]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:03:50]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:03:50]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:03:50]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+-------------------------------
+[Execution 2023-11-01 19:03:58]
+-------------------------------
+[Info 2023-11-01 19:03:58]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:03:58]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:03:58]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:03:58]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:03:58]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:03:59]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:04:46]
+-------------------------------
+[Info 2023-11-01 19:04:46]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:04:46]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:04:46]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:04:46]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:04:46]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:04:47]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-01 19:04:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:44:25: QML ColorAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:44, 
+
+[Warning 2023-11-01 19:04:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:51:25: QML ColorAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:51, 
+
+[Warning 2023-11-01 19:04:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:37: ReferenceError: orange is not defined
+ViewSearch.qml:37, 
+
+[Warning 2023-11-01 19:04:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:44:25: QML ColorAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:44, 
+
+[Warning 2023-11-01 19:04:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:51:25: QML ColorAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:51, 
+
+[Warning 2023-11-01 19:04:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:37: ReferenceError: orange is not defined
+ViewSearch.qml:37, 
+
+-------------------------------
+[Execution 2023-11-01 19:05:09]
+-------------------------------
+[Info 2023-11-01 19:05:09]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:05:09]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:05:09]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:05:09]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:05:10]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:05:11]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-01 19:05:14]: qrc:/RecipeManager/src_gui/ViewSearch.qml:44:25: QML ColorAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:44, 
+
+[Warning 2023-11-01 19:05:14]: qrc:/RecipeManager/src_gui/ViewSearch.qml:51:25: QML ColorAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:51, 
+
+[Warning 2023-11-01 19:05:14]: qrc:/RecipeManager/src_gui/ViewSearch.qml:44:25: QML ColorAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:44, 
+
+[Warning 2023-11-01 19:05:14]: qrc:/RecipeManager/src_gui/ViewSearch.qml:51:25: QML ColorAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:51, 
+
+-------------------------------
+[Execution 2023-11-01 19:07:59]
+-------------------------------
+[Info 2023-11-01 19:07:59]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:07:59]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:07:59]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:07:59]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:07:59]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:08:01]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-01 19:08:04]: qrc:/RecipeManager/src_gui/ViewSearch.qml:42:25: QML PropertyAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:42, 
+
+[Warning 2023-11-01 19:08:04]: qrc:/RecipeManager/src_gui/ViewSearch.qml:49:25: QML PropertyAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:49, 
+
+[Warning 2023-11-01 19:08:04]: qrc:/RecipeManager/src_gui/ViewSearch.qml:42:25: QML PropertyAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:42, 
+
+[Warning 2023-11-01 19:08:04]: qrc:/RecipeManager/src_gui/ViewSearch.qml:49:25: QML PropertyAnimation: Cannot animate non-existent property "color"
+ViewSearch.qml:49, 
+
+-------------------------------
+[Execution 2023-11-01 19:09:32]
+-------------------------------
+[Info 2023-11-01 19:09:33]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:09:33]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:09:33]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:09:33]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:09:33]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:09:35]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:10:17]
+-------------------------------
+[Info 2023-11-01 19:10:17]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:10:17]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:10:17]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:10:17]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:10:17]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:10:18]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-01 19:10:21]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-01 19:10:21]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:48 Cannot assign to non-existent property "color"
+Main.qml:149, 
+
+[Warning 2023-11-01 19:10:21]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-01 19:10:21]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:48 Cannot assign to non-existent property "color"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-01 19:10:47]
+-------------------------------
+[Info 2023-11-01 19:10:47]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:10:47]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:10:47]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:10:47]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:10:48]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:10:49]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-01 19:10:52]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-01 19:10:52]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:42 Cannot assign to non-existent property "contentItem"
+Main.qml:149, 
+
+[Warning 2023-11-01 19:10:52]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-01 19:10:52]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:42 Cannot assign to non-existent property "contentItem"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-01 19:11:41]
+-------------------------------
+[Info 2023-11-01 19:11:41]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:11:41]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:11:41]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:11:41]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:11:42]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:11:42]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-01 19:11:46]: qrc:/RecipeManager/src_gui/ViewSearch.qml:62: ReferenceError: coloredRectangle is not defined
+ViewSearch.qml:62, 
+
+[Warning 2023-11-01 19:11:46]: qrc:/RecipeManager/src_gui/ViewSearch.qml:62: ReferenceError: coloredRectangle is not defined
+ViewSearch.qml:62, 
+
+-------------------------------
+[Execution 2023-11-01 19:12:47]
+-------------------------------
+[Info 2023-11-01 19:12:48]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:12:48]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:12:48]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:12:48]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:12:48]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:12:49]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:14:31]
+-------------------------------
+[Info 2023-11-01 19:14:31]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:14:31]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:14:31]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:14:31]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:14:31]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:14:32]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:15:09]
+-------------------------------
+[Info 2023-11-01 19:15:09]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:15:09]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:15:09]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:15:09]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:15:09]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:15:10]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:15:35]
+-------------------------------
+[Info 2023-11-01 19:15:35]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:15:35]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:15:35]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:15:35]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:15:35]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:15:36]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:15:56]
+-------------------------------
+[Info 2023-11-01 19:15:56]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:15:56]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:15:56]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:15:56]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:15:56]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:15:56]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-01 19:16:09]: qrc:/RecipeManager/src_gui/ViewSearch.qml:18:17: TypeError: Cannot read property 'width' of null
+ViewSearch.qml:18, 
+
+[Warning 2023-11-01 19:16:12]: qrc:/RecipeManager/src_gui/ViewSearch.qml:18:17: TypeError: Cannot read property 'width' of null
+ViewSearch.qml:18, 
+
+[Warning 2023-11-01 19:16:15]: qrc:/RecipeManager/src_gui/ViewSearch.qml:18:17: TypeError: Cannot read property 'width' of null
+ViewSearch.qml:18, 
+
+-------------------------------
+[Execution 2023-11-01 19:16:35]
+-------------------------------
+[Info 2023-11-01 19:16:35]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:16:35]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:16:35]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:16:35]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:16:35]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:16:36]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-01 19:16:51]
+-------------------------------
+[Info 2023-11-01 19:16:51]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:16:51]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:16:51]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-01 19:16:51]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:16:51]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-01 19:16:52]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 15:54:29]
+-------------------------------
+[Info 2023-11-02 15:54:29]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:54:29]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:54:29]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:54:29]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 15:54:29]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 15:54:31]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 15:55:11]
+-------------------------------
+[Info 2023-11-02 15:55:11]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:55:11]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:55:11]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:55:11]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 15:55:11]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 15:55:12]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 15:55:13]: qrc:/RecipeManager/src_gui/Main.qml:79:17: TypeError: Cannot read property 'width' of null
+Main.qml:79, 
+
+-------------------------------
+[Execution 2023-11-02 15:55:30]
+-------------------------------
+[Info 2023-11-02 15:55:30]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:55:30]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:55:30]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:55:30]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 15:55:30]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 15:55:31]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 15:55:47]
+-------------------------------
+[Info 2023-11-02 15:55:47]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:55:47]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:55:47]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 15:55:47]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 15:55:47]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 15:55:48]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 16:53:59]
+-------------------------------
+[Info 2023-11-02 16:53:59]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:53:59]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:53:59]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:53:59]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 16:53:59]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+-------------------------------
+[Execution 2023-11-02 16:56:02]
+-------------------------------
+[Info 2023-11-02 16:56:03]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:56:03]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:56:03]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:56:03]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 16:56:03]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 16:56:04]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 16:56:08]: qrc:/RecipeManager/src_gui/ViewSearch.qml:51: TypeError: Property 'getRecipesStrings' of object RecipeFetcher(0x562108393840) is not a function
+ViewSearch.qml:51, 
+
+[Warning 2023-11-02 16:56:08]: qrc:/RecipeManager/src_gui/ViewSearch.qml:51: TypeError: Property 'getRecipesStrings' of object RecipeFetcher(0x562108393840) is not a function
+ViewSearch.qml:51, 
+
+-------------------------------
+[Execution 2023-11-02 16:57:48]
+-------------------------------
+[Info 2023-11-02 16:57:48]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:57:48]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:57:48]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:57:48]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 16:57:48]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+-------------------------------
+[Execution 2023-11-02 16:58:01]
+-------------------------------
+[Info 2023-11-02 16:58:02]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:58:02]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:58:02]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:58:02]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 16:58:02]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 16:58:03]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 16:59:05]
+-------------------------------
+[Info 2023-11-02 16:59:05]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:59:05]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:59:05]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 16:59:05]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 16:59:06]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 16:59:07]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Info 2023-11-02 16:59:15]: Establishing new thread connection (or replacing)
+managerdb.cpp:58, void ManagerDB::makeThreadConnection(QSqlDatabase&)
+
+[Info 2023-11-02 16:59:15]: Established new thread connection successfully
+managerdb.cpp:72, void ManagerDB::makeThreadConnection(QSqlDatabase&)
+
+[Debug 2023-11-02 16:59:53]: ID: 1  Title: "Miso-Butter Roast Chicken With Acorn Squash Panzanella"  Ingredients: "['1 (31⁄2–4-lb.) whole chicken', 3⁄42¾ tsp. kosher salt, divided, plus more', '2 small acorn squash (about 3 lb. total)', '2 Tbsp. finely chopped sage', '1 Tbsp. finely chopped rosemary', '6 Tbsp. unsalted butter, melted, plus 3 Tbsp. room temperature1⁄4, '¼ tsp. ground allspice', 'Pinch of crushed red pepper flakes', 'Freshly ground black pepp1⁄3r', '⅓ loaf good-quality sturdy white bread, torn into 1\" pieces 1⁄2about 2½ cups)', '2 medium apples (such as Gala or Pink Lady; about 14 oz. total), cored, cut into 1\" pieces', '2 Tbsp. extra-virgin oli1⁄2e oil', '½ small red onion, thinly sliced', '3 Tbsp. apple cider vinegar', '1 Tbsp. wh1⁄4te miso', '¼ cup all-purpose flour', '2 Tbsp. unsalted butter, room t1⁄4mperature', '¼ cup dry white wine', '2 cups unsalted chicken broth', '2 tsp. white miso', 'Kosher salt, freshly ground pepper']"  Instructions: "Pat chicken dry with paper towels, season all over with 2 tsp. salt, and tie legs together with kitchen twine. Let sit at room temperature 1 hour.\r\nMeanwhile, halve squash and scoop out seeds. Run a vegetable peeler along ridges of squash halves to remove skin. Cut each half into 1⁄2\"-thick wedges; arrange on a rimmed baking sheet.\r\nCombine sage, rosemary, and 6 Tbsp. melted butter in a large bowl; pour half of mixture over squash on baking sheet. Sprinkle squash with allspice, red pepper flakes, an1⁄2 ½ tsp. salt and season with black pepper; toss to coat.\r\nAdd bread, apples, oil, 1⁄4nd ¼ tsp. salt to remaining herb butter in bowl; season with black pepper and toss to combine. Set aside.\r\nPlace onion and vinegar in a small bowl; season with salt and toss to coat. Let sit, tossing occasionally, until ready to serve.\r\nPlace a rack in middle and lower third of oven; preheat to 425°F. Mix miso and 3 Tbsp. room-temperature butter in a small bowl until smooth. Pat chicken dry with paper towels, then rub or brush all over with miso butter. Place chicken in a large cast-iron skillet and roast on middle rack until an instant-read thermometer inserted into the thickest part of breast registers 155°F, 50–60 minutes. (Temperature will climb to 165°F while chicken rests.) Let chicken rest in skillet at least 5 minutes, then transfer to a plate; reserve skillet.\r\nMeanwhile, roast squash on lower rack until mostly tender, about 25 minutes. Remove from oven and scatter reserved bread mixture over, spreading into as even a layer as you can manage. Return to oven and roast until bread is golden brown and crisp and apples are tender, about 15 minutes. Remove from oven, drain pickled onions, and toss to combine. Transfer to a serving dish.\r\nUsing your fingers, mash flour and butter in a small bowl to combine.\r\nSet reserved skillet with chicken drippings over medium heat. You should have 1⁄4bout ¼ cup, but a little over or under is all good. (If you have significantly more, drain off and set excess aside.) Add wine and cook, stirring often and scraping up any browned bits with a wooden spoon, until bits are loosened and wine is reduced by about half (you should be able to smell the wine), about 2 minutes. Add butter mixture; cook, stirring often, until a smooth paste forms, about 2 minutes. Add broth and any reserved drippings and cook, stirring constantly, until combined and thickened, 6–8 minutes. Remove from heat and stir in miso. Taste and season with salt and black pepper.\r\nServe chicken with gravy and squash panzanella alongside."
+recipefetcher.cpp:63, void RecipeFetcher::searchByTitleAsync(QString)
+
+[Warning 2023-11-02 16:59:53]: qrc:/RecipeManager/src_gui/Search.qml:18: ReferenceError: viewStack is not defined
+Search.qml:18, 
+
+[Warning 2023-11-02 16:59:53]: qrc:/RecipeManager/src_gui/Search.qml:18: ReferenceError: viewStack is not defined
+Search.qml:18, 
+
+-------------------------------
+[Execution 2023-11-02 17:00:23]
+-------------------------------
+[Info 2023-11-02 17:00:23]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:00:23]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:00:23]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:00:23]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:00:23]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:00:26]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Info 2023-11-02 17:00:32]: Establishing new thread connection (or replacing)
+managerdb.cpp:58, void ManagerDB::makeThreadConnection(QSqlDatabase&)
+
+[Info 2023-11-02 17:00:33]: Established new thread connection successfully
+managerdb.cpp:72, void ManagerDB::makeThreadConnection(QSqlDatabase&)
+
+[Debug 2023-11-02 17:00:59]: ID: 1  Title: "Miso-Butter Roast Chicken With Acorn Squash Panzanella"  Ingredients: "['1 (31⁄2–4-lb.) whole chicken', 3⁄42¾ tsp. kosher salt, divided, plus more', '2 small acorn squash (about 3 lb. total)', '2 Tbsp. finely chopped sage', '1 Tbsp. finely chopped rosemary', '6 Tbsp. unsalted butter, melted, plus 3 Tbsp. room temperature1⁄4, '¼ tsp. ground allspice', 'Pinch of crushed red pepper flakes', 'Freshly ground black pepp1⁄3r', '⅓ loaf good-quality sturdy white bread, torn into 1\" pieces 1⁄2about 2½ cups)', '2 medium apples (such as Gala or Pink Lady; about 14 oz. total), cored, cut into 1\" pieces', '2 Tbsp. extra-virgin oli1⁄2e oil', '½ small red onion, thinly sliced', '3 Tbsp. apple cider vinegar', '1 Tbsp. wh1⁄4te miso', '¼ cup all-purpose flour', '2 Tbsp. unsalted butter, room t1⁄4mperature', '¼ cup dry white wine', '2 cups unsalted chicken broth', '2 tsp. white miso', 'Kosher salt, freshly ground pepper']"  Instructions: "Pat chicken dry with paper towels, season all over with 2 tsp. salt, and tie legs together with kitchen twine. Let sit at room temperature 1 hour.\r\nMeanwhile, halve squash and scoop out seeds. Run a vegetable peeler along ridges of squash halves to remove skin. Cut each half into 1⁄2\"-thick wedges; arrange on a rimmed baking sheet.\r\nCombine sage, rosemary, and 6 Tbsp. melted butter in a large bowl; pour half of mixture over squash on baking sheet. Sprinkle squash with allspice, red pepper flakes, an1⁄2 ½ tsp. salt and season with black pepper; toss to coat.\r\nAdd bread, apples, oil, 1⁄4nd ¼ tsp. salt to remaining herb butter in bowl; season with black pepper and toss to combine. Set aside.\r\nPlace onion and vinegar in a small bowl; season with salt and toss to coat. Let sit, tossing occasionally, until ready to serve.\r\nPlace a rack in middle and lower third of oven; preheat to 425°F. Mix miso and 3 Tbsp. room-temperature butter in a small bowl until smooth. Pat chicken dry with paper towels, then rub or brush all over with miso butter. Place chicken in a large cast-iron skillet and roast on middle rack until an instant-read thermometer inserted into the thickest part of breast registers 155°F, 50–60 minutes. (Temperature will climb to 165°F while chicken rests.) Let chicken rest in skillet at least 5 minutes, then transfer to a plate; reserve skillet.\r\nMeanwhile, roast squash on lower rack until mostly tender, about 25 minutes. Remove from oven and scatter reserved bread mixture over, spreading into as even a layer as you can manage. Return to oven and roast until bread is golden brown and crisp and apples are tender, about 15 minutes. Remove from oven, drain pickled onions, and toss to combine. Transfer to a serving dish.\r\nUsing your fingers, mash flour and butter in a small bowl to combine.\r\nSet reserved skillet with chicken drippings over medium heat. You should have 1⁄4bout ¼ cup, but a little over or under is all good. (If you have significantly more, drain off and set excess aside.) Add wine and cook, stirring often and scraping up any browned bits with a wooden spoon, until bits are loosened and wine is reduced by about half (you should be able to smell the wine), about 2 minutes. Add butter mixture; cook, stirring often, until a smooth paste forms, about 2 minutes. Add broth and any reserved drippings and cook, stirring constantly, until combined and thickened, 6–8 minutes. Remove from heat and stir in miso. Taste and season with salt and black pepper.\r\nServe chicken with gravy and squash panzanella alongside."
+recipefetcher.cpp:63, void RecipeFetcher::searchByTitleAsync(QString)
+
+-------------------------------
+[Execution 2023-11-02 17:04:22]
+-------------------------------
+[Info 2023-11-02 17:04:22]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:04:22]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:04:22]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:04:22]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:04:22]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:04:24]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Info 2023-11-02 17:04:38]: Establishing new thread connection (or replacing)
+managerdb.cpp:58, void ManagerDB::makeThreadConnection(QSqlDatabase&)
+
+[Info 2023-11-02 17:04:38]: Established new thread connection successfully
+managerdb.cpp:72, void ManagerDB::makeThreadConnection(QSqlDatabase&)
+
+[Info 2023-11-02 17:05:34]: Establishing new thread connection (or replacing)
+managerdb.cpp:58, void ManagerDB::makeThreadConnection(QSqlDatabase&)
+
+[Warning 2023-11-02 17:05:34]: QSqlDatabasePrivate::removeDatabase: connection 'thread_connection' is still in use, all queries will cease to work.
+:0, 
+
+[Warning 2023-11-02 17:05:34]: QSqlDatabasePrivate::addDatabase: duplicate connection name 'thread_connection', old connection removed.
+:0, 
+
+[Info 2023-11-02 17:05:35]: Established new thread connection successfully
+managerdb.cpp:72, void ManagerDB::makeThreadConnection(QSqlDatabase&)
+
+[Debug 2023-11-02 17:06:01]: ID: 2  Title: "Crispy Salt and Pepper Potatoes"  Ingredients: "['2 large egg whites', '1 pound new potatoes (about 1 inch in diameter)', '2 teaspoons kosher salt', '3⁄4 teaspoon finely ground black pepper', '1 teaspoon finely chopped rosemary', '1 teaspoon finely chopped thyme', '1 teaspoon finely chopped parsley']"  Instructions: "Preheat oven to 400°F and line a rimmed baking sheet with parchment. In a large bowl, whisk the egg whites until foamy (there shouldn’t be any liquid whites in the bowl). Add the potatoes and toss until they’re well coated with the egg whites, then transfer to a strainer or colander and let the excess whites drain. Season the potatoes with the salt, pepper, and herbs. Scatter the potatoes on the baking sheet (make sure they’re not touching) and roast until the potatoes are very crispy and tender when poked with a knife, 15 to 20 minutes (depending on the size of the potatoes).\r\nTransfer to a bowl and serve."
+recipefetcher.cpp:63, void RecipeFetcher::searchByTitleAsync(QString)
+
+-------------------------------
+[Execution 2023-11-02 17:07:12]
+-------------------------------
+[Info 2023-11-02 17:07:12]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:07:12]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:07:12]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:07:12]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:07:12]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:07:13]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:07:55]
+-------------------------------
+[Info 2023-11-02 17:07:55]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:07:55]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:07:55]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:07:55]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:07:55]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:07:56]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:09:08]
+-------------------------------
+[Info 2023-11-02 17:09:08]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:09:08]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:09:08]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:09:08]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:09:08]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:09:09]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:09:35]
+-------------------------------
+[Info 2023-11-02 17:09:35]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:09:35]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:09:35]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:09:35]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:09:35]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:09:36]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:12:11]
+-------------------------------
+[Info 2023-11-02 17:12:12]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:12:12]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:12:12]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:12:12]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:12:12]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:12:13]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:13:55]
+-------------------------------
+[Info 2023-11-02 17:13:55]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:13:55]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:13:55]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:13:55]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:13:55]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:13:56]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:14:00]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:14:00]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:26 Cannot assign to non-existent property "padding"
+Main.qml:149, 
+
+[Warning 2023-11-02 17:14:00]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:14:00]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:26 Cannot assign to non-existent property "padding"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-02 17:14:14]
+-------------------------------
+[Info 2023-11-02 17:14:15]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:14:15]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:14:15]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:14:15]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:14:15]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:14:16]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:15:41]
+-------------------------------
+[Info 2023-11-02 17:15:42]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:15:42]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:15:42]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:15:42]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:15:42]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:15:43]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:16:21]
+-------------------------------
+[Info 2023-11-02 17:16:21]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:16:21]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:16:21]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:16:21]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:16:21]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:16:22]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:17:18]
+-------------------------------
+[Info 2023-11-02 17:17:19]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:17:19]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:17:19]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:17:19]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:17:19]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:17:20]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:17:25]: qrc:/RecipeManager/src_gui/ViewSearch.qml:27:13: QML QQuickText: Binding loop detected for property "padding"
+ViewSearch.qml:27, 
+
+[Warning 2023-11-02 17:17:25]: qrc:/RecipeManager/src_gui/ViewSearch.qml:27:13: QML QQuickText: Binding loop detected for property "padding"
+ViewSearch.qml:27, 
+
+-------------------------------
+[Execution 2023-11-02 17:18:26]
+-------------------------------
+[Info 2023-11-02 17:18:26]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:18:26]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:18:26]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:18:26]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:18:26]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:18:27]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:19:14]
+-------------------------------
+[Info 2023-11-02 17:19:14]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:19:14]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:19:14]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:19:14]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:19:14]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:19:15]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:20:15]
+-------------------------------
+[Info 2023-11-02 17:20:15]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:20:15]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:20:15]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:20:15]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:20:15]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:20:16]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:20:19]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:20:19]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:24 Cannot assign to non-existent property "topInset"
+Main.qml:149, 
+
+[Warning 2023-11-02 17:20:19]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:20:19]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:24 Cannot assign to non-existent property "topInset"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-02 17:20:33]
+-------------------------------
+[Info 2023-11-02 17:20:33]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:20:33]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:20:33]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:20:33]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:20:33]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:20:34]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:20:37]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:20:37]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:27 Cannot assign to non-existent property "topInset"
+Main.qml:149, 
+
+[Warning 2023-11-02 17:20:37]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:20:37]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:27 Cannot assign to non-existent property "topInset"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-02 17:21:21]
+-------------------------------
+[Info 2023-11-02 17:21:21]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:21:21]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:21:21]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:21:21]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:21:22]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:21:22]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:21:26]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:21:26]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:33 Cannot assign to non-existent property "verticalPadding"
+Main.qml:149, 
+
+[Warning 2023-11-02 17:21:26]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:21:26]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:33 Cannot assign to non-existent property "verticalPadding"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-02 17:21:45]
+-------------------------------
+[Info 2023-11-02 17:21:45]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:21:45]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:21:45]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:21:45]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:21:45]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:21:46]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:21:50]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:21:50]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:33 Cannot assign to non-existent property "verticalPadding"
+Main.qml:149, 
+
+[Warning 2023-11-02 17:21:50]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:21:50]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:33 Cannot assign to non-existent property "verticalPadding"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-02 17:21:59]
+-------------------------------
+[Info 2023-11-02 17:21:59]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:21:59]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:21:59]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:21:59]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:22:00]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:22:00]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:24:27]
+-------------------------------
+[Info 2023-11-02 17:24:27]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:24:27]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:24:27]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:24:27]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:24:27]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:24:29]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:24:34]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:24:34]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:25 Cannot assign to non-existent property "padding"
+Main.qml:149, 
+
+[Warning 2023-11-02 17:24:34]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:24:34]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:25 Cannot assign to non-existent property "padding"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-02 17:24:45]
+-------------------------------
+[Info 2023-11-02 17:24:46]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:24:46]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:24:46]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:24:46]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:24:46]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:24:46]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:24:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:28:17: QML QQuickText: Binding loop detected for property "padding"
+ViewSearch.qml:28, 
+
+[Warning 2023-11-02 17:24:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:28:17: QML QQuickText: Binding loop detected for property "padding"
+ViewSearch.qml:28, 
+
+[Warning 2023-11-02 17:24:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:28:17: QML QQuickText: Binding loop detected for property "padding"
+ViewSearch.qml:28, 
+
+[Warning 2023-11-02 17:24:50]: qrc:/RecipeManager/src_gui/ViewSearch.qml:28:17: QML QQuickText: Binding loop detected for property "padding"
+ViewSearch.qml:28, 
+
+-------------------------------
+[Execution 2023-11-02 17:25:09]
+-------------------------------
+[Info 2023-11-02 17:25:09]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:25:09]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:25:09]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:25:09]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:25:09]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:25:11]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:25:38]: qrc:/RecipeManager/src_gui/ViewSearch.qml:24:13: QML QQuickText: Binding loop detected for property "padding"
+ViewSearch.qml:24, 
+
+[Warning 2023-11-02 17:25:38]: qrc:/RecipeManager/src_gui/ViewSearch.qml:24:13: QML QQuickText: Binding loop detected for property "padding"
+ViewSearch.qml:24, 
+
+-------------------------------
+[Execution 2023-11-02 17:25:56]
+-------------------------------
+[Info 2023-11-02 17:25:56]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:25:56]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:25:56]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:25:56]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:25:56]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:25:56]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+[Warning 2023-11-02 17:26:00]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:26:00]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:25 Cannot assign to non-existent property "fillIn"
+Main.qml:149, 
+
+[Warning 2023-11-02 17:26:00]: QQmlComponent: Component is not ready
+:0, 
+
+[Warning 2023-11-02 17:26:00]: qrc:/RecipeManager/src_gui/Main.qml:149:5: QML StackView: push: qrc:/RecipeManager/src_gui/ViewSearch.qml:25 Cannot assign to non-existent property "fillIn"
+Main.qml:149, 
+
+-------------------------------
+[Execution 2023-11-02 17:26:11]
+-------------------------------
+[Info 2023-11-02 17:26:11]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:26:11]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:26:11]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:26:11]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:26:12]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:26:12]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
+-------------------------------
+[Execution 2023-11-02 17:27:35]
+-------------------------------
+[Info 2023-11-02 17:27:35]: Loading driver/plugin
+managerdb.cpp:40, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:27:35]: QJsonObject({"IID":"org.qt-project.Qt.QSqlDriverFactoryInterface","MetaData":{"Keys":["QMYSQL","QMARIADB"]},"archlevel":1,"className":"QMYSQLDriverPlugin","debug":false,"version":394496})
+managerdb.cpp:44, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:27:35]: Loaded the plugin
+managerdb.cpp:47, bool ManagerDB::loadDriver()
+
+[Info 2023-11-02 17:27:35]: Establishing default connection
+managerdb.cpp:17, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:27:35]: Established default connection successfully
+managerdb.cpp:31, void ManagerDB::setupDB()
+
+[Info 2023-11-02 17:27:37]: libpng warning: iCCP: profile 'Photoshop ICC profile': 'RGB ': RGB color space not permitted on grayscale PNG
+:0, 
+
