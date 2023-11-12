@@ -14,6 +14,8 @@
 #include <QtConcurrent>
 #include <QSqlQuery>
 
+#include <QPixmap>
+
 #include "managerdb.hpp"
 
 class RecipeFetcher : public QObject
@@ -37,6 +39,8 @@ public:
 public slots:
     QList<QList<QString> > getRecipesStrings();
     QList<QByteArray> getRecipesImages();
+
+    QString loadImage(int index);
 
     void searchByTitle(QString title);
     void searchByTitleAsync(QString title);

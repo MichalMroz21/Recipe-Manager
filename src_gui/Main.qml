@@ -214,7 +214,7 @@ Window {
         switch (index) {
             case 0: pageSelected = "User.qml"; break;
             case 1: pageSelected = "Recipes.qml"; break;
-            case 2: pageSelected = "ViewSearch.qml"; break;
+            case 2: pageSelected = "Search.qml"; break;
             case 3: pageSelected = "Plan.qml"; break;
             case 4: pageSelected = "Options.qml"; break;
         }

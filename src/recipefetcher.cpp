@@ -13,6 +13,11 @@ QList<QByteArray> RecipeFetcher::getRecipesImages(){
     return recipesImages;
 }
 
+QString RecipeFetcher::loadImage(int index)
+{
+    return recipesImages[index].toBase64();
+}
+
 void RecipeFetcher::setRecipesImages(const QList<QByteArray> &newRecipesImages){
     recipesImages = newRecipesImages;
 }
@@ -53,14 +58,12 @@ void RecipeFetcher::searchByTitleAsync(QString title){
 
     while (query.next()) {
 
-        int id = query.value(0).toInt();
-
         QString title = query.value(1).toString();
         QString ingredients = query.value(2).toString();
         QString instructions = query.value(3).toString();
         QByteArray imageBin = query.value(4).toByteArray();
 
-        qDebug() << "ID:" << id << " Title:" << title << " Ingredients:" << ingredients << " Instructions:" << instructions;
+        qDebug() << imageBin;
 
         recipesStrings.append(QList<QString>{title, ingredients, instructions});
         recipesImages.append(imageBin);
