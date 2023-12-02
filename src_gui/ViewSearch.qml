@@ -1,123 +1,143 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.5
 import QtQuick.Layouts 6.3
+import Qt5Compat.GraphicalEffects
 
 Page{
 
-    Connections{
-        target: recipeFetcher
+    function getRandomColor() {
+      const minBrightness = 150;
+
+      let red, green, blue;
+
+      do {
+        red = Math.floor(Math.random() * 256);
+        green = Math.floor(Math.random() * 256);
+        blue = Math.floor(Math.random() * 256);
+      } while ((red + green + blue) / 3 < minBrightness);
+
+      const hexRed = red.toString(16).padStart(2, '0');
+      const hexGreen = green.toString(16).padStart(2, '0');
+      const hexBlue = blue.toString(16).padStart(2, '0');
+
+      const colorCode = `#${hexRed}${hexGreen}${hexBlue}`;
+
+      return colorCode;
     }
 
-    ListView {
+    function darkenColor(hexColor, darkness) {
 
-        width: parent.width
-        height: parent.height
+        const red = parseInt(hexColor.substring(1, 3), 16);
+        const green = parseInt(hexColor.substring(3, 5), 16);
+        const blue = parseInt(hexColor.substring(5, 7), 16);
 
-        flickableDirection: Flickable.VerticalFlick
-        boundsBehavior: Flickable.StopAtBounds
-        clip: true
+        const darkerRed = Math.max(0, red - darkness);
+        const darkerGreen = Math.max(0, green - darkness);
+        const darkerBlue = Math.max(0, blue - darkness);
 
-        id: listView
+        const darkerHexColor =
+            "#" +
+            Math.round(darkerRed).toString(16).padStart(2, "0") +
+            Math.round(darkerGreen).toString(16).padStart(2, "0") +
+            Math.round(darkerBlue).toString(16).padStart(2, "0");
 
-        model: ListModel {
-            //Will be populated dynamically
-            id: recipeModel
-        }
+        return darkerHexColor;
+    }
 
-        delegate: Rectangle {
-            width: parent.width
-            color: generateRandomColor()
+    ScrollView {
 
-            Column {
-                anchors.fill: parent
-                spacing: 10
+        anchors.fill: parent
 
-                Image {
-                    id: img
-                    width: root.width / 3
-                    height: width
-                    Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    fillMode: Image.PreserveAspectFit
-                    source: "data:image/png;base64," + model.base64
-                    smooth: true
-                    antialiasing: true
-                }
+        ListView{
+            id: listView
 
-                Text {
-                    Layout.fillHeight: true
-                    width: parent.width - 20 // Adjust the width as needed
-                    wrapMode: Text.Wrap
-                    text: model.titleText
-                    color: "white"
-                    horizontalAlignment: Text.AlignHCenter
-                }
-
-                Text {
-                    Layout.fillHeight: true
-                    width: parent.width - 20 // Adjust the width as needed
-                    wrapMode: Text.Wrap
-                    text: model.ingredientsText
-                    color: "orange"
-                    horizontalAlignment: Text.AlignHCenter
-                }
-
-                Text {
-                    Layout.fillHeight: true
-                    width: parent.width - 20 // Adjust the width as needed
-                    wrapMode: Text.Wrap
-                    text: model.instructionsText
-                    color: "blue"
-                    horizontalAlignment: Text.AlignHCenter
-                }
+            model: ListModel {
+                id: recipeModel
             }
 
-        }
+            delegate:
 
-        ScrollBar.vertical: ScrollBar {
-            policy: ScrollBar.AlwaysOn
-            size: listView.contentHeight / listView.height
+                Column {
 
-            contentItem: Rectangle {
-                implicitWidth: 5
-                color: "orange"
-                radius: width
+                    width: parent.width
+                    spacing: 10
 
-                SequentialAnimation on color {
-                    loops: Animation.Infinite
-                    ColorAnimation { from: "orange"; to: "orangered"; duration: 1000 }
-                    ColorAnimation { from: "orangered"; to: "orange"; duration: 1000 }
+                    Text {
+                        Layout.fillHeight: true
+                        width: parent.width - 20
+                        wrapMode: Text.WrapAnywhere
+                        text: model.titleText
+                        color: getRandomColor()
+                        horizontalAlignment: Text.AlignHCenter
+
+                        layer.enabled: true
+                        layer.effect: DropShadow {
+                            verticalOffset: 2
+                            color: darkenColor(color, 75)
+                            radius: 1
+                            samples: 3
+                        }
+                    }
+
+                    RowLayout{
+
+                        width: parent.width
+                        anchors.horizontalCenter: parent.horizontalCenter
+
+                        RowLayout{
+
+                            Layout.alignment: Qt.AlignHCenter
+                            spacing: 20
+
+                            Image {
+                                id: img
+                                fillMode: Image.PreserveAspectFit
+                                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                source: "data:image/jpg;base64," + model.base64
+                            }
+
+                            Text {
+                                Layout.fillHeight: true
+                                width: parent.width - img.width - 20
+                                wrapMode: Text.Wrap
+                                text: model.ingredientsText
+                                color: "orange"
+                                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                            }
+                        }
+
+
+
+                    }
+
+                    Text {
+                        Layout.fillHeight: true
+                        width: parent.width - 20
+                        wrapMode: Text.Wrap
+                        text: model.instructionsText
+                        color: "blue"
+                        horizontalAlignment: Text.AlignHCenter
+                    }
+
                 }
-            }
         }
 
         Component.onCompleted: {
-
             var recipes = recipeFetcher.getRecipesStrings();
 
             for (var i = 0; i < recipes.length; ++i) {
 
                var imageBase64 = recipeFetcher.loadImage(i);
-
                var recipe = recipes[i];
-
                var ingredientsList = recipe[1].replace(/'/g, '').split(', ');
 
                recipe[1] = ingredientsList.join("\n").slice(1);
+               recipe[1] = recipe[1].replace(/]/g, '');
 
                recipeModel.append({titleText: recipe[0] + "\n\n", base64: imageBase64, ingredientsText: recipe[1] + "\n\n", instructionsText: recipe[2] + "\n\n"});
            }
-
         }
+
+
     }
-
-
-    function generateRandomColor() {
-        var red = Math.floor(Math.random() * 256);
-        var green = Math.floor(Math.random() * 256);
-        var blue = Math.floor(Math.random() * 256);
-
-        return Qt.rgba(red / 255, green / 255, blue / 255, 1);
-    }
-
 }

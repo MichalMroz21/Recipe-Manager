@@ -1,5 +1,5 @@
 file(GLOB FOLDER_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
-    *.qml LoginRegisterComponents/*.qml SearchComponents/*.qml ViewSearchComponents/*.qml)
+    *.qml LoginRegisterComponents/*.qml SearchComponents/*.qml)
 
 list(APPEND FOLDER_FILES ${LOGIN_REGISTER_FILES})
 
