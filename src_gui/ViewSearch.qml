@@ -63,19 +63,26 @@ Page{
                     spacing: 10
 
                     Text {
+
+                        property var textColor : getRandomColor()
+
+                        id: title
+
+                        topPadding: 20
+
                         Layout.fillHeight: true
                         width: parent.width - 20
                         wrapMode: Text.WrapAnywhere
                         text: model.titleText
-                        color: getRandomColor()
+                        color: textColor
                         horizontalAlignment: Text.AlignHCenter
+
+                        font.pixelSize: 20
 
                         layer.enabled: true
                         layer.effect: DropShadow {
-                            verticalOffset: 2
-                            color: darkenColor(color, 75)
-                            radius: 1
-                            samples: 3
+                            color: darkenColor(title.textColor, 75)
+                            radius: 6
                         }
                     }
 
@@ -89,24 +96,67 @@ Page{
                             Layout.alignment: Qt.AlignHCenter
                             spacing: 20
 
+                            property var randColor : getRandomColor()
+
                             Image {
                                 id: img
                                 fillMode: Image.PreserveAspectFit
                                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                                 source: "data:image/jpg;base64," + model.base64
+
+                                layer.enabled: true
+                                layer.effect: DropShadow {
+                                    color: darkenColor(parent.randColor, 75)
+                                    radius: 6
+                                }
                             }
 
-                            Text {
-                                Layout.fillHeight: true
-                                width: parent.width - img.width - 20
-                                wrapMode: Text.Wrap
-                                text: model.ingredientsText
-                                color: "orange"
+                            ColumnLayout{
+
                                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+
+                                property var textColor : parent.randColor
+
+                                Text{
+                                    text: "Ingredients"
+                                    font.pixelSize: 22
+                                    color: parent.textColor
+
+                                    id: ingrTitle
+
+                                    layer.enabled: true
+                                    layer.effect: DropShadow {
+                                        color: darkenColor(parent.textColor, 75)
+                                        radius: 15
+                                    }
+                                }
+
+                                Text {
+                                    Layout.fillHeight: true
+                                    width: parent.width - img.width - 20
+                                    wrapMode: Text.Wrap
+                                    text: model.ingredientsText
+                                    color: parent.textColor
+
+                                }
                             }
                         }
+                    }
 
+                    property var textColor : getRandomColor()
 
+                    Text{
+                        text: "Instructions"
+                        font.pixelSize: 22
+                        color: parent.textColor
+
+                        layer.enabled: true
+                        layer.effect: DropShadow {
+                            color: darkenColor(parent.textColor, 75)
+                            radius: 7
+                        }
+
+                        anchors.horizontalCenter: parent.horizontalCenter
 
                     }
 
@@ -115,7 +165,7 @@ Page{
                         width: parent.width - 20
                         wrapMode: Text.Wrap
                         text: model.instructionsText
-                        color: "blue"
+                        color: parent.textColor
                         horizontalAlignment: Text.AlignHCenter
                     }
 
@@ -125,7 +175,7 @@ Page{
         Component.onCompleted: {
             var recipes = recipeFetcher.getRecipesStrings();
 
-            for (var i = 0; i < recipes.length; ++i) {
+            for (var i = 0; i < recipes.length; i++) {
 
                var imageBase64 = recipeFetcher.loadImage(i);
                var recipe = recipes[i];
@@ -137,7 +187,5 @@ Page{
                recipeModel.append({titleText: recipe[0] + "\n\n", base64: imageBase64, ingredientsText: recipe[1] + "\n\n", instructionsText: recipe[2] + "\n\n"});
            }
         }
-
-
     }
 }
