@@ -1,10 +1,12 @@
 USE recipe_manager;
 
 DROP PROCEDURE IF EXISTS insert_user;
-DROP PROCEDURE IF EXISTS search_by_title;
+DROP PROCEDURE IF EXISTS search_recipes;
 
 DROP FUNCTION IF EXISTS get_id_with_login;
 DROP FUNCTION IF EXISTS validate_credentials;
+
+DROP TABLE IF EXISTS temp_ingredients;
 
 CREATE PROCEDURE insert_user(IN in_login VARCHAR(20), IN in_password VARCHAR(20))
 BEGIN
@@ -82,8 +84,40 @@ BEGIN
 END;
 
 
-CREATE PROCEDURE search_by_title(IN in_title VARCHAR(150))
+CREATE PROCEDURE search_recipes(IN in_title VARCHAR(150), IN in_ingredients VARCHAR(500), IN in_sortTitle BOOLEAN, IN in_sortIngredients BOOLEAN)
 BEGIN
-    SELECT id, title, ingredients, instructions, image_bin FROM recipes
-    WHERE title = in_title;
+
+    DECLARE ingredient_index INT DEFAULT 1;
+    DECLARE current_ingredient VARCHAR(100);
+
+    DROP TABLE IF EXISTS temp_ingredients;
+    CREATE TABLE temp_ingredients (ingredient VARCHAR(100));
+
+    WHILE ingredient_index <= LENGTH(in_ingredients) - LENGTH(REPLACE(in_ingredients, '\n', '')) + 1 DO
+        SET current_ingredient = TRIM(SUBSTRING_INDEX(SUBSTRING_INDEX(in_ingredients, '\n', ingredient_index), '\n', -1));
+        INSERT INTO temp_ingredients (ingredient) VALUES (current_ingredient);
+        SET ingredient_index = ingredient_index + 1;
+    END WHILE;
+
+
+    SELECT id, title, ingredients, instructions, image_bin
+    FROM recipes
+    WHERE 
+        (LENGTH(in_title) = 0 OR LOWER(title) LIKE CONCAT('%', LOWER(in_title), '%'))
+        AND (
+        LENGTH(in_ingredients) = 0
+        OR (
+            SELECT COUNT(*)
+            FROM temp_ingredients
+            WHERE recipes.ingredients LIKE CONCAT('%', LOWER(temp_ingredients.ingredient), '%')
+        ) = (SELECT COUNT(*) FROM temp_ingredients)
+    ) AND LENGTH(title) > 0 AND LENGTH(ingredients) > 0 AND LENGTH(instructions) > 0
+    
+    ORDER BY
+    CASE
+        WHEN in_sortTitle THEN title
+        ELSE NULL
+    END;
+
+    DROP TABLE IF EXISTS temp_ingredients;
 END;

@@ -40,7 +40,7 @@ void RecipeFetcher::clearRecipes()
     recipesStrings.clear();
 }
 
-void RecipeFetcher::searchByTitleAsync(QString title){
+void RecipeFetcher::searchRecipesAsync(QString title, QString ingredients, bool sortByTitle, bool sortByIngredients){
 
     emit makeThreadConnection(db);
 
@@ -50,7 +50,7 @@ void RecipeFetcher::searchByTitleAsync(QString title){
 
     bool success = true;
 
-    if (!query.exec(QString("CALL search_by_title('%1')").arg(title))) {
+    if (!query.exec(QString("CALL search_recipes('%1', '%2', %3, %4)").arg(title, ingredients, sortByTitle ? "true" : "false", sortByIngredients ? "true" : "false"))) {
         error = query.lastError().text();
         success = false;
         qWarning() << "Error executing stored procedure:" << error;
@@ -63,20 +63,18 @@ void RecipeFetcher::searchByTitleAsync(QString title){
         QString instructions = query.value(3).toString();
         QByteArray imageBin = query.value(4).toByteArray();
 
-        qDebug() << imageBin;
-
         recipesStrings.append(QList<QString>{title, ingredients, instructions});
         recipesImages.append(imageBin);
     }
 
-    emit titleSearchFinished(success, error);
+    emit searchFinished(success, error);
 }
 
-void RecipeFetcher::searchByTitle(QString title)
+void RecipeFetcher::searchRecipes(QString title, QString ingredients, bool sortByTitle, bool sortByIngredients)
 {
     clearRecipes();
 
     static_cast<void>(QtConcurrent::run([=](){
-        searchByTitleAsync(title);
+        searchRecipesAsync(title, ingredients, sortByTitle, sortByIngredients);
     }));
 }

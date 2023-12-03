@@ -4,7 +4,7 @@ import QtQuick.Layouts 1.15
 
 RowLayout {
 
-    property string displayString: "";
+    property string recipes: "";
     Layout.alignment: Qt.AlignHCenter
     scale: Math.min(root.width * 0.002, root.height * 0.002)
 
@@ -19,12 +19,12 @@ RowLayout {
             var inputText = text.trim();
 
             if(inputText === "clear"){
-                displayString = "";
+                recipes = "";
                 placeholderText = "Type in ingredients";
             }
 
             else if (inputText !== "") {
-                displayString += inputText + '\n';
+                recipes += inputText + '\n';
                 placeholderText = "Type \"clear\" to clear";
             }
 
@@ -61,7 +61,7 @@ RowLayout {
             width: contentWidth === 0 ? 0 : contentWidth + leftPadding + rightPadding
 
             contentItem: Text {
-                text: displayString
+                text: recipes
                 font.pixelSize: 16
                 color: "orange"
             }

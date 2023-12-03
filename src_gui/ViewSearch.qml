@@ -44,6 +44,31 @@ Page{
         return darkerHexColor;
     }
 
+    function wrapText(text, maxWordsPerLine) {
+
+        if(text.includes('•')) maxWordsPerLine -= 1;
+
+        var ingredients = text.split("\n");
+        var result = "";
+
+        for(var i = 0; i < ingredients.length; i++){
+            var words = ingredients[i].split(" ");
+
+            var ingredient = "";
+
+            for(var j = 0; j < words.length; j++){
+                ingredient += words[j];
+                ingredient += ' ';
+                if((j + 1) % maxWordsPerLine == 0 && j + 1 !== words.length) ingredient += '\n';
+            }
+
+            result += ingredient;
+            result += '\n';
+        }
+
+        return result;
+    }
+
     ScrollView {
 
         anchors.fill: parent
@@ -59,6 +84,7 @@ Page{
 
                 Column {
 
+                    bottomPadding: 100
                     width: parent.width
                     spacing: 10
 
@@ -109,6 +135,9 @@ Page{
                                     color: darkenColor(parent.randColor, 75)
                                     radius: 6
                                 }
+
+                                Layout.preferredWidth: 274
+                                Layout.preferredHeight: 169
                             }
 
                             ColumnLayout{
@@ -127,17 +156,15 @@ Page{
                                     layer.enabled: true
                                     layer.effect: DropShadow {
                                         color: darkenColor(parent.textColor, 75)
-                                        radius: 15
+                                        radius: 7
                                     }
                                 }
 
                                 Text {
                                     Layout.fillHeight: true
-                                    width: parent.width - img.width - 20
-                                    wrapMode: Text.Wrap
-                                    text: model.ingredientsText
+                                    wrapMode: Text.WordWrap
+                                    text: wrapText(model.ingredientsText, 14)
                                     color: parent.textColor
-
                                 }
                             }
                         }
@@ -149,6 +176,8 @@ Page{
                         text: "Instructions"
                         font.pixelSize: 22
                         color: parent.textColor
+
+                        topPadding: 20
 
                         layer.enabled: true
                         layer.effect: DropShadow {
@@ -163,8 +192,8 @@ Page{
                     Text {
                         Layout.fillHeight: true
                         width: parent.width - 20
-                        wrapMode: Text.Wrap
-                        text: model.instructionsText
+                        wrapMode: Text.WordWrap
+                        text: wrapText(model.instructionsText, 30)
                         color: parent.textColor
                         horizontalAlignment: Text.AlignHCenter
                     }
@@ -179,13 +208,39 @@ Page{
 
                var imageBase64 = recipeFetcher.loadImage(i);
                var recipe = recipes[i];
-               var ingredientsList = recipe[1].replace(/'/g, '').split(', ');
 
-               recipe[1] = ingredientsList.join("\n").slice(1);
-               recipe[1] = recipe[1].replace(/]/g, '');
+               var extractedContent = recipe[1].slice(1, -1);
+
+               var formattedString = "";
+               var inSingleQuote = false;
+
+               for (var j = 0; j < extractedContent.length; j++) {
+                   var currentChar = extractedContent[j];
+
+                   if (currentChar === "'" || currentChar === '"') {
+                       if(inSingleQuote){
+                           if(j + 1 !== extractedContent.length && extractedContent[j + 1] !== ',') continue;
+                           formattedString += '\n';
+                       }
+                       else{
+                           formattedString += "• ";
+                       }
+
+                       inSingleQuote = !inSingleQuote;
+                   }
+                   else if(inSingleQuote){
+                       formattedString += currentChar;
+                   }
+               }
+
+               recipe[1] = formattedString;
+
+               if(i === 0) console.log(recipe[1]);
 
                recipeModel.append({titleText: recipe[0] + "\n\n", base64: imageBase64, ingredientsText: recipe[1] + "\n\n", instructionsText: recipe[2] + "\n\n"});
            }
         }
+
+
     }
 }

@@ -42,11 +42,11 @@ public slots:
 
     QString loadImage(int index);
 
-    void searchByTitle(QString title);
-    void searchByTitleAsync(QString title);
+    void searchRecipes(QString title, QString ingredients, bool sortByTitle, bool sortByIngredients);
+    void searchRecipesAsync(QString title, QString ingredients, bool sortByTitle, bool sortByIngredients);
 
 signals:
-    void titleSearchFinished(bool success, QString error);
+    void searchFinished(bool success, QString error);
     void makeThreadConnection(QSqlDatabase& db);
 
 };

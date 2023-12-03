@@ -11,8 +11,8 @@ Page {
     Connections{
         target: recipeFetcher
 
-        function onTitleSearchFinished(success, error) {
-            biTitle.running = false;
+        function onSearchFinished(success, error) {
+            biSearch.running = false;
 
             if(success){
                 stackView.push("ViewSearch.qml");
@@ -32,41 +32,27 @@ Page {
         id: searchLayout
 
         SearchTextRow {
-            text: qsTr("Search by title")
+            text: qsTr("Title keyword")
         }
 
         InputSearch {
             id: titleText
         }
 
-        SubmitButton {
-
-            id: searchTitleButton
-
-            onClicked:{
-                biTitle.running = true;
-                recipeFetcher.searchByTitle(titleText.text);
-            }
-
-            SearchIndicator{
-                id: biTitle
-            }
-        }
-
         SearchTextRow {
             Layout.topMargin: root.height / 20
-            text: qsTr("Search by ingredients")
+            text: qsTr("Ingredients")
         }
 
         IngredientsRow {
             id: ingredientsRow
         }
 
-
         SubmitButton {
             id: searchIngredientsButton
 
             onClicked:{
+                recipeFetcher.searchRecipes(titleText.text, ingredientsRow.recipes, sortByTitle.checked, sortIngredients.checked);
                 biSearch.running = true;
             }
 
@@ -91,8 +77,8 @@ Page {
             SearchCheckbox{
 
                 Layout.alignment: Qt.AlignRight
-                text: qsTr("Sort by Instructions length");
-                id: sortByIngredients
+                text: qsTr("Sort Ingredients");
+                id: sortIngredients
             }
         }
 
