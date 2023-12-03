@@ -17,5 +17,7 @@ CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     login VARCHAR(20) NOT NULL,
     password VARCHAR(300) NOT NULL,
+    profile_img LONGBLOB,
+    join_date DATE,
     salt VARCHAR(32) NOT NULL
 );

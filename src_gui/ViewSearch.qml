@@ -90,7 +90,7 @@ Page{
 
                     Text {
 
-                        property var textColor : getRandomColor()
+                        property var textColor : model.titleText === "No Results" ? "red" : getRandomColor()
 
                         id: title
 
@@ -147,7 +147,7 @@ Page{
                                 property var textColor : parent.randColor
 
                                 Text{
-                                    text: "Ingredients"
+                                    text: model.titleText === "No Results" ? "" : "Ingredients"
                                     font.pixelSize: 22
                                     color: parent.textColor
 
@@ -173,7 +173,7 @@ Page{
                     property var textColor : getRandomColor()
 
                     Text{
-                        text: "Instructions"
+                        text: model.titleText === "No Results" ? "" : "Instructions"
                         font.pixelSize: 22
                         color: parent.textColor
 
@@ -203,6 +203,10 @@ Page{
 
         Component.onCompleted: {
             var recipes = recipeFetcher.getRecipesStrings();
+
+            if(recipes.length === 0){
+                recipeModel.append({titleText: "No Results"});
+            }
 
             for (var i = 0; i < recipes.length; i++) {
 

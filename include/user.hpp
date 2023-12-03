@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QSqlQuery>
 #include <QQmlProperty>
+#include <QDateTime>
 
 #include "CMakeConfig.hpp"
 
@@ -16,6 +17,7 @@ class User : public QObject
 private:
     QSqlDatabase db{};
     QString password{}, login{};
+    int id{};
     bool isLoggedIn{};
 
 public:
@@ -37,6 +39,7 @@ public slots:
     void setPasswordAndLogin(const QString& newLogin, const QString& newPassword);
     void loginUser();
     bool getIsLoggedIn() const;
+    void setIdUsingLogin();
 
     void sendDBUser(QSqlDatabase db);
 

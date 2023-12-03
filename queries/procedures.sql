@@ -8,7 +8,7 @@ DROP FUNCTION IF EXISTS validate_credentials;
 
 DROP TABLE IF EXISTS temp_ingredients;
 
-CREATE PROCEDURE insert_user(IN in_login VARCHAR(20), IN in_password VARCHAR(20))
+CREATE PROCEDURE insert_user(IN in_login VARCHAR(20), IN in_password VARCHAR(20), IN in_date DATE)
 BEGIN
     DECLARE user_id INT;
 
@@ -32,7 +32,7 @@ BEGIN
         SIGNAL SQLSTATE '45000' SET message_text = 'User with this login already exists.';      
     END IF;
 
-    INSERT INTO users (login, password) VALUES (in_login, in_password);
+    INSERT INTO users (login, password, join_date) VALUES (in_login, in_password, in_date);
 END;
 
 

@@ -50,6 +50,7 @@ Page {
                 text: qsTr("Register")
                 onClicked:{
                     user.setPasswordAndLogin(registerLogin.text, registerPassword.text);
+                    user.setIdUsingLogin();
                     user.registerUser(registerConfirmPassword.text);
                 }
             }
@@ -101,6 +102,7 @@ Page {
                 text: qsTr("Log In")
                 onClicked:{
                     user.setPasswordAndLogin(login.text, password.text);
+                    user.setIdUsingLogin();
                     user.loginUser();
                 }
             }

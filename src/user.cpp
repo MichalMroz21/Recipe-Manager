@@ -8,6 +8,7 @@ bool User::getIsLoggedIn() const{
     return isLoggedIn;
 }
 
+
 void User::sendDBUser(QSqlDatabase db)
 {
     this->db = db;
@@ -38,6 +39,33 @@ void User::setPasswordAndLogin(const QString& newLogin, const QString& newPasswo
     password = newPassword;
 }
 
+void User::setIdUsingLogin()
+{
+    QSqlQuery query{db};
+
+    //FUNCTION validate_credentials(in_login VARCHAR(20), in_password VARCHAR(20)) RETURNS BOOLEAN
+    query.prepare("SELECT get_id_with_login(?)");
+
+    query.bindValue(0, login);
+
+    if(query.exec()){
+
+        if(query.next()){
+            id = query.value(0).toInt();
+        }
+        else{
+            qWarning() << "No result from the function get_id_with_login";
+        }
+    }
+
+    else{
+        QString fullErrorMsg = query.lastError().text();
+        emit changeLoginError(extractError(fullErrorMsg));
+        qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);
+    }
+}
+
+
 void User::loginUser(){
     isLoggedIn = checkCredentials();
     if(isLoggedIn) emit changeLoginError("User successfully logged in!", "green");
@@ -53,7 +81,7 @@ bool User::checkCredentials(){
 
     bool isValid{false};
 
-    //validate_credentials(in_login VARCHAR(20), in_password VARCHAR(20)) RETURNS BOOLEAN
+    //FUNCTION validate_credentials(in_login VARCHAR(20), in_password VARCHAR(20)) RETURNS BOOLEAN
     query.prepare("SELECT validate_credentials(?, ?)");
 
     query.bindValue(0, login);
@@ -106,10 +134,11 @@ void User::registerUser(const QString& confirmPassword){
     QSqlQuery query{db};
 
     //insert_user(IN in_login VARCHAR(20), IN in_password VARCHAR(20))
-    query.prepare("CALL insert_user(?, ?)");
+    query.prepare("CALL insert_user(?, ?, ?)");
 
     query.addBindValue(login);
     query.addBindValue(password);
+    query.addBindValue(QDateTime::currentDateTime().toString("yyyy-MM-dd"));
 
     if(query.exec()){
         guiMessage = "User registered successfully!";
