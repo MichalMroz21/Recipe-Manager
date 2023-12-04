@@ -5,6 +5,7 @@
 ManagerDB::ManagerDB(User* user, QObject *parent) : QObject{parent}
 {
     QObject::connect(this, &ManagerDB::sendDBUser, user, &User::sendDBUser);
+    this->user = user;
 }
 
 ManagerDB::~ManagerDB()
@@ -90,30 +91,6 @@ void ManagerDB::convertFractions(QString& input) {
     }
 }
 
-QByteArray ManagerDB::imageToBinary(QString &curr)
-{
-    QString path = QString("%1/%2%3").arg(PATH_TO_RECIPE_IMAGES, curr, ".jpg");
-
-    QImage image(path);
-
-    if (image.isNull()) {
-        qWarning() << "Failed to load image.";
-        return QByteArray();
-    }
-
-    QByteArray byteArray;
-    QBuffer buffer(&byteArray);
-
-    buffer.open(QIODevice::WriteOnly);
-
-    if (!image.save(&buffer, "JPG")) {
-        qWarning() << "Failed to convert image to binary.";
-        return QByteArray();
-    }
-
-    return byteArray;
-}
-
 //Requires connecting as an admin user
 void ManagerDB::insertRecipes(){
 
@@ -149,7 +126,9 @@ void ManagerDB::insertRecipes(){
 
             if(columnName == "image_bin"){
 
-                QByteArray byteImage = imageToBinary(curr);
+                QString temp = PATH_TO_RECIPE_IMAGES + curr + ".jpg";
+
+                QByteArray byteImage = user->imageToBinary(temp);
 
                 if(byteImage.isNull()){
                     qWarning() << QString("Failed to convert image: %1, exiting function").arg(curr);

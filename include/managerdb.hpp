@@ -25,6 +25,7 @@ class ManagerDB : public QObject
     Q_OBJECT
 private:
     QSqlDatabase db{};
+    User* user;
 
 public:
     explicit ManagerDB(User* user, QObject *parent = nullptr);
@@ -32,8 +33,6 @@ public:
 
     void listDrivers();
     void convertFractions(QString& input);
-
-    QByteArray imageToBinary(QString& curr);
 
 public slots:
     void setupDB();

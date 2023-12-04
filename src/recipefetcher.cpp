@@ -1,5 +1,8 @@
 #include "recipefetcher.hpp"
 
+RecipeFetcher::RecipeFetcher(ManagerDB* man, QObject *parent) : QObject{parent}{
+    QObject::connect(this, &RecipeFetcher::makeThreadConnection, man, &ManagerDB::makeThreadConnection, Qt::BlockingQueuedConnection);
+}
 
 QList<QList<QString> > RecipeFetcher::getRecipesStrings(){
     return recipesStrings;
@@ -20,10 +23,6 @@ QString RecipeFetcher::loadImage(int index)
 
 void RecipeFetcher::setRecipesImages(const QList<QByteArray> &newRecipesImages){
     recipesImages = newRecipesImages;
-}
-
-RecipeFetcher::RecipeFetcher(ManagerDB* man, QObject *parent) : QObject{parent}{
-    QObject::connect(this, &RecipeFetcher::makeThreadConnection, man, &ManagerDB::makeThreadConnection, Qt::BlockingQueuedConnection);
 }
 
 RecipeFetcher::~RecipeFetcher(){

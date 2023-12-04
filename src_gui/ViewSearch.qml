@@ -5,6 +5,10 @@ import Qt5Compat.GraphicalEffects
 
 Page{
 
+    Connections{
+        target: recipeFetcher
+    }
+
     function getRandomColor() {
       const minBrightness = 150;
 
@@ -238,8 +242,6 @@ Page{
                }
 
                recipe[1] = formattedString;
-
-               if(i === 0) console.log(recipe[1]);
 
                recipeModel.append({titleText: recipe[0] + "\n\n", base64: imageBase64, ingredientsText: recipe[1] + "\n\n", instructionsText: recipe[2] + "\n\n"});
            }

@@ -2,12 +2,36 @@
 #include "qsqlerror.h"
 
 
+void User::setProfileImg(const QByteArray &newProfileImg)
+{
+    profileImg = newProfileImg;
+}
+
+QString User::getProfileImg() const
+{
+    return profileImg;
+}
+
+void User::setDescription(const QString &newDescription)
+{
+    description = newDescription;
+}
+
+QString User::getDescription() const
+{
+    return description;
+}
+
+QString User::getJoinDate() const
+{
+    return joinDate;
+}
+
 User::User(QObject* parent) {}
 
 bool User::getIsLoggedIn() const{
     return isLoggedIn;
 }
-
 
 void User::sendDBUser(QSqlDatabase db)
 {
@@ -39,6 +63,61 @@ void User::setPasswordAndLogin(const QString& newLogin, const QString& newPasswo
     password = newPassword;
 }
 
+QByteArray User::imageToBinary(QString &curr)
+{
+
+    QImage image(curr);
+
+    if (image.isNull()) {
+        qWarning() << "Failed to load image.";
+        return QByteArray();
+    }
+
+    QByteArray byteArray;
+    QBuffer buffer(&byteArray);
+
+    buffer.open(QIODevice::WriteOnly);
+
+    if (!image.save(&buffer, "JPG")) {
+        qWarning() << "Failed to convert image to binary.";
+        return QByteArray();
+    }
+
+    return byteArray;
+}
+
+void User::updateProfileImg(QString fileUrl)
+{
+    QSqlQuery query{db};
+
+    QString error{};
+
+    bool success = true;
+
+    fileUrl.replace("file://", "");
+
+    QByteArray imgBin = imageToBinary(fileUrl);
+
+    if(imgBin.size() == 0){
+        success = false;
+        error = "Invalid selected image!";
+    }
+
+    else{
+        query.prepare(QString("CALL update_profile_img('%1', '%2', :img_bin)").arg(login, password));
+        query.bindValue(":img_bin", imgBin, QSql::Binary);
+
+        //PROCEDURE update_profile_img(IN in_login VARCHAR(20), IN in_password VARCHAR(20), IN in_img LONGBLOB)
+        if (!query.exec()){
+            error = query.lastError().text();
+            success = false;
+            qWarning() << "Error executing stored procedure:" << error;
+        }
+    }
+
+    emit profileUpdated(success, error);
+}
+
 void User::setIdUsingLogin()
 {
     QSqlQuery query{db};
@@ -63,6 +142,30 @@ void User::setIdUsingLogin()
         emit changeLoginError(extractError(fullErrorMsg));
         qWarning() << QString("Failed to execute %1: %2").arg(Q_FUNC_INFO, fullErrorMsg);
     }
+}
+
+void User::getUserDataUsingID()
+{
+    QSqlQuery query{db};
+
+    QString error{};
+
+    bool success = true;
+
+    if (!query.exec(QString("CALL get_user_data('%1', '%2')").arg(login, password))){
+        error = query.lastError().text();
+        success = false;
+        qWarning() << "Error executing stored procedure:" << error;
+    }
+
+    while (query.next()) {
+        id = query.value(0).toInt();
+        profileImg = query.value(3).toByteArray().toBase64();
+        joinDate = query.value(4).toString();
+        description = query.value(5).toString();
+    }
+
+    emit userDataObtained(success, error);
 }
 
 

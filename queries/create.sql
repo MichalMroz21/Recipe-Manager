@@ -19,5 +19,6 @@ CREATE TABLE users (
     password VARCHAR(300) NOT NULL,
     profile_img LONGBLOB,
     join_date DATE,
+    description VARCHAR(250),
     salt VARCHAR(32) NOT NULL
 );

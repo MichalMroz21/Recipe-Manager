@@ -6,6 +6,10 @@ DROP PROCEDURE IF EXISTS search_recipes;
 DROP FUNCTION IF EXISTS get_id_with_login;
 DROP FUNCTION IF EXISTS validate_credentials;
 
+DROP PROCEDURE IF EXISTS get_user_data;
+DROP PROCEDURE IF EXISTS update_user_description;
+DROP PROCEDURE IF EXISTS update_profile_img;
+
 DROP TABLE IF EXISTS temp_ingredients;
 
 CREATE PROCEDURE insert_user(IN in_login VARCHAR(20), IN in_password VARCHAR(20), IN in_date DATE)
@@ -81,6 +85,75 @@ BEGIN
     END IF;
 
     RETURN out_is_valid;
+END;
+
+CREATE PROCEDURE update_profile_img(IN in_login VARCHAR(20), IN in_password VARCHAR(20), IN in_img LONGBLOB)
+BEGIN
+
+    DECLARE valid_cred BOOLEAN;
+    DECLARE user_id INT;
+
+    SELECT get_id_with_login(in_login) INTO user_id;
+    SELECT validate_credentials(in_login, in_password) INTO valid_cred;
+
+    IF user_id = -1 THEN
+        SIGNAL SQLSTATE '45000' SET message_text = 'Cannot find user with given login.';
+    END IF;
+
+    IF NOT valid_cred THEN
+        SIGNAL SQLSTATE '45000' SET message_text = 'Invalid login or password.';
+    END IF;
+
+    UPDATE users
+    SET profile_img = in_img
+    WHERE id = user_id;
+
+END;
+
+CREATE PROCEDURE update_user_description(IN in_description VARCHAR(250), IN in_login VARCHAR(20), IN in_password VARCHAR(20))
+BEGIN
+
+    DECLARE valid_cred BOOLEAN;
+    DECLARE user_id INT;
+
+    SELECT get_id_with_login(in_login) INTO user_id;
+    SELECT validate_credentials(in_login, in_password) INTO valid_cred;
+
+    IF user_id = -1 THEN
+        SIGNAL SQLSTATE '45000' SET message_text = 'Cannot find user with given login.';
+    END IF;
+
+    IF NOT valid_cred THEN
+        SIGNAL SQLSTATE '45000' SET message_text = 'Invalid login or password.';
+    END IF;
+
+    UPDATE users
+    SET description = in_description
+    WHERE id = user_id;
+
+END;
+
+
+CREATE PROCEDURE get_user_data(IN in_login VARCHAR(20), in_password VARCHAR(20))
+BEGIN
+
+    DECLARE user_id INT;
+    DECLARE valid_cred BOOLEAN;
+
+    SELECT get_id_with_login(in_login) INTO user_id;
+    SELECT validate_credentials(in_login, in_password) INTO valid_cred;
+
+    IF user_id = -1 THEN
+        SIGNAL SQLSTATE '45000' SET message_text = 'Cannot find user with given login.';
+    END IF;
+
+    IF NOT valid_cred THEN
+        SIGNAL SQLSTATE '45000' SET message_text = 'Invalid login or password.';
+    END IF;
+
+    SELECT * FROM users
+    WHERE user_id = id;
+
 END;
 
 
