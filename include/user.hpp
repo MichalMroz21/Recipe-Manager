@@ -57,6 +57,7 @@ public slots:
     QString getLogin() const;
 
     void updateProfileImg(QString fireUrl);
+    void updateProfileDescription(QString description);
 
     QByteArray imageToBinary(QString &curr);
 

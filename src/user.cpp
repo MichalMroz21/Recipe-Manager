@@ -86,6 +86,26 @@ QByteArray User::imageToBinary(QString &curr)
     return byteArray;
 }
 
+void User::updateProfileDescription(QString description)
+{
+    QSqlQuery query{db};
+
+    QString error{};
+
+    bool success = true;
+
+    query.prepare(QString("CALL update_user_description('%1', '%2', '%3')").arg(description, login, password));
+
+    //PROCEDURE update_user_description(IN in_description VARCHAR(250), IN in_login VARCHAR(20), IN in_password VARCHAR(20))
+    if (!query.exec()){
+        error = query.lastError().text();
+        success = false;
+        qWarning() << "Error executing stored procedure:" << error;
+    }
+
+    emit profileUpdated(success, error);
+}
+
 void User::updateProfileImg(QString fileUrl)
 {
     QSqlQuery query{db};

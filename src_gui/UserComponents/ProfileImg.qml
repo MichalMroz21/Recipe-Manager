@@ -11,11 +11,11 @@ Image {
     property var base64;
 
     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-    source: "data:image/jpg;base64," + base64
+    source: "data:image/png;base64," + base64
 
     layer.enabled: true
     layer.effect: DropShadow {
-        color: "lightgreen"
+        color: "gray"
         radius: 6
     }
 
